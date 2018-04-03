@@ -1,0 +1,38 @@
+=============== Apr 2, 2018 (UTC) ===============
+06:20:55.261212 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+06:20:55.266719 db@open opening
+06:20:55.270185 version@stat F·[] S·0B[] Sc·[]
+06:20:55.273829 db@janitor F·2 G·0
+06:20:55.274663 db@open done T·7.719958ms
+06:21:25.909653 db@close closing
+06:21:25.910620 db@close done T·975.809µs
+=============== Apr 2, 2018 (UTC) ===============
+06:21:26.241797 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+06:21:26.250516 version@stat F·[] S·0B[] Sc·[]
+06:21:26.251190 db@open opening
+06:21:26.253293 journal@recovery F·1
+06:21:26.255311 journal@recovery recovering @1
+06:21:26.269424 version@stat F·[] S·0B[] Sc·[]
+06:21:26.285136 db@janitor F·2 G·0
+06:21:26.285702 db@open done T·34.072016ms
+=============== Apr 3, 2018 (UTC) ===============
+01:44:25.343159 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+01:44:25.376291 version@stat F·[] S·0B[] Sc·[]
+01:44:25.377974 db@open opening
+01:44:25.380420 journal@recovery F·1
+01:44:25.382000 journal@recovery recovering @2
+01:44:25.387117 version@stat F·[] S·0B[] Sc·[]
+01:44:25.396904 db@janitor F·2 G·0
+01:44:25.397328 db@open done T·18.9725ms
+03:25:12.946560 db@close closing
+03:25:12.950726 db@close done T·4.553223ms
+=============== Apr 3, 2018 (UTC) ===============
+03:27:20.773273 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+03:27:20.788429 version@stat F·[] S·0B[] Sc·[]
+03:27:20.789424 db@open opening
+03:27:20.808809 journal@recovery F·1
+03:27:20.837427 journal@recovery recovering @4
+03:27:21.081652 memdb@flush created L0@6 N·2 S·497B "be;پ\xc7s\x15,v2":"\xf6u\\[ދh\xf3,v1"
+03:27:21.087951 version@stat F·[1] S·497B[497B] Sc·[0.25]
+03:27:21.207036 db@janitor F·3 G·0
+03:27:21.207889 db@open done T·417.698146ms

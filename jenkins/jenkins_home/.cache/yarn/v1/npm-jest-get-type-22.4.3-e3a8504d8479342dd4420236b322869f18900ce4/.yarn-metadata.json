@@ -1,0 +1,25 @@
+{
+  "manifest": {
+    "name": "jest-get-type",
+    "description": "A utility function to get the type of a value",
+    "version": "22.4.3",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest.git"
+    },
+    "license": "MIT",
+    "main": "build/index.js",
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-jest-get-type-22.4.3-e3a8504d8479342dd4420236b322869f18900ce4/package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-22.4.3.tgz#e3a8504d8479342dd4420236b322869f18900ce4",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-22.4.3.tgz",
+    "hash": "e3a8504d8479342dd4420236b322869f18900ce4",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "e3a8504d8479342dd4420236b322869f18900ce4"
+}

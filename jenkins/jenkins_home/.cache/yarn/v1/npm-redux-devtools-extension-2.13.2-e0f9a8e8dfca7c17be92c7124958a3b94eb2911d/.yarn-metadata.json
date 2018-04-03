@@ -1,0 +1,36 @@
+{
+  "manifest": {
+    "name": "redux-devtools-extension",
+    "version": "2.13.2",
+    "description": "Wrappers for Redux DevTools Extension.",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/zalmoxisus/redux-devtools-extension"
+    },
+    "homepage": "https://github.com/zalmoxisus/redux-devtools-extension",
+    "author": {
+      "name": "Mihail Diordiev",
+      "email": "zalmoxisus@gmail.com",
+      "url": "https://github.com/zalmoxisus"
+    },
+    "license": "MIT",
+    "peerDependencies": {
+      "redux": "^3.1.0"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-redux-devtools-extension-2.13.2-e0f9a8e8dfca7c17be92c7124958a3b94eb2911d/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# Redux DevTools Extension's helper\n\n[![Join the chat at https://gitter.im/zalmoxisus/redux-devtools-extension](https://badges.gitter.im/zalmoxisus/redux-devtools-extension.svg)](https://gitter.im/zalmoxisus/redux-devtools-extension?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n\n## Usage\n\n  Install:\n  ```\n  npm install --save redux-devtools-extension\n  ```\n  and use like that:\n  ```js\n  import { createStore, applyMiddleware } from 'redux';\n  import { composeWithDevTools } from 'redux-devtools-extension';\n\n  const store = createStore(reducer, composeWithDevTools(\n    applyMiddleware(...middleware),\n    // other store enhancers if any\n  ));\n  ```\n  or if needed to apply [extension’s options](https://github.com/zalmoxisus/redux-devtools-extension/blob/master/docs/API/Arguments.md#windowdevtoolsextensionconfig):\n  ```js\n  import { createStore, applyMiddleware } from 'redux';\n  import { composeWithDevTools } from 'redux-devtools-extension';\n\n  const composeEnhancers = composeWithDevTools({\n    // Specify here name, actionsBlacklist, actionsCreators and other options\n  });\n  const store = createStore(reducer, composeEnhancers(\n    applyMiddleware(...middleware),\n    // other store enhancers if any\n  ));\n  ```  \n  There’re just [few lines of code](https://github.com/zalmoxisus/redux-devtools-extension/blob/master/npm-package/index.js). If you don’t want to allow the extension in production, just use ‘redux-devtools-extension/developmentOnly’ instead of ‘redux-devtools-extension’.\n\n## License\n\nMIT\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/redux-devtools-extension/-/redux-devtools-extension-2.13.2.tgz#e0f9a8e8dfca7c17be92c7124958a3b94eb2911d",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/redux-devtools-extension/-/redux-devtools-extension-2.13.2.tgz",
+    "hash": "e0f9a8e8dfca7c17be92c7124958a3b94eb2911d",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "e0f9a8e8dfca7c17be92c7124958a3b94eb2911d"
+}

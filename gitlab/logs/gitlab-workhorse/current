@@ -1,0 +1,257 @@
+2018-04-03_03:26:40.98127 2018/04/03 03:26:40 Starting gitlab-workhorse v3.3.1-20180102.163641
+2018-04-03_03:26:40.99304 2018/04/03 03:26:40 keywatcher: starting process loop
+2018-04-03_03:26:40.99370 2018/04/03 03:26:40 redis: dialing "unix", "/var/opt/gitlab/redis/redis.socket"
+2018-04-03_03:27:42.41486 2018/04/03 03:27:42 error: GET "/help": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-04-03_03:27:42.42132 localhost @ - - [2018-04-03 03:27:42.371581279 +0000 UTC] "GET /help HTTP/1.1" 502 2916 "" "curl/7.56.1" 0.049304
+2018-04-03_03:28:28.31877 2018/04/03 03:28:28 Starting gitlab-workhorse v3.3.1-20180102.163641
+2018-04-03_03:28:28.32840 2018/04/03 03:28:28 keywatcher: starting process loop
+2018-04-03_03:28:28.32937 2018/04/03 03:28:28 redis: dialing "unix", "/var/opt/gitlab/redis/redis.socket"
+2018-04-03_03:28:54.59596 localhost @ - - [2018-04-03 03:28:42.968905671 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 11.624909
+2018-04-03_03:29:30.22082 2018/04/03 03:29:30 error: GET "/": badgateway: failed after 1s: context canceled
+2018-04-03_03:29:30.22575 localhost:10080 @ - - [2018-04-03 03:29:29.097493947 +0000 UTC] "GET / HTTP/1.1" 502 2916 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 1.127284
+2018-04-03_03:29:38.30105 localhost:10080 @ - - [2018-04-03 03:29:30.030232744 +0000 UTC] "GET / HTTP/1.1" 200 19273 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 8.269293
+2018-04-03_03:29:40.89505 localhost:10080 @ - - [2018-04-03 03:29:39.779176636 +0000 UTC] "GET /samuel/jenkins-jest/refs/master/logs_tree/?_=1522721046419 HTTP/1.1" 304 0 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 1.115668
+2018-04-03_03:29:43.84076 localhost:10080 @ - - [2018-04-03 03:29:39.769240206 +0000 UTC] "GET /samuel/jenkins-jest HTTP/1.1" 200 85096 "http://localhost:10080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 4.070178
+2018-04-03_03:29:44.81541 localhost:10080 @ - - [2018-04-03 03:29:44.044113701 +0000 UTC] "GET /samuel/jenkins-jest/refs/master/logs_tree/?_=1522726176831 HTTP/1.1" 200 4472 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.771046
+2018-04-03_03:29:47.58422 localhost:10080 @ - - [2018-04-03 03:29:39.779563942 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/README.md?format=json&viewer=rich HTTP/1.1" 304 0 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 7.804501
+2018-04-03_03:29:50.81743 localhost:10080 @ - - [2018-04-03 03:29:44.044149783 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/README.md?format=json&viewer=rich HTTP/1.1" 304 0 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 6.773083
+2018-04-03_03:29:56.11546 localhost @ - - [2018-04-03 03:29:55.492740426 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.622635
+2018-04-03_03:30:57.28952 localhost @ - - [2018-04-03 03:30:56.64654264 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.642089
+2018-04-03_03:31:31.11059 gitlab @ - - [2018-04-03 03:31:30.903449224 +0000 UTC] "GET /pedoe/jenkins-jest-test/info/refs?service=git-upload-pack HTTP/1.1" 301 141 "" "git/2.11.0" 0.206978
+2018-04-03_03:31:31.54527 gitlab @ - - [2018-04-03 03:31:31.116412589 +0000 UTC] "GET /pedoe/jenkins-jest-test.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.428684
+2018-04-03_03:31:58.17487 localhost @ - - [2018-04-03 03:31:58.020763489 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.153865
+2018-04-03_03:32:00.97088 gitlab @ - - [2018-04-03 03:31:53.320198247 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 7.650400
+2018-04-03_03:32:09.08029 localhost:10080 @ - - [2018-04-03 03:32:06.309642378 +0000 UTC] "GET /samuel/jenkins-jest/settings/integrations HTTP/1.1" 200 44135 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 2.768810
+2018-04-03_03:32:13.63525 localhost:10080 @ - - [2018-04-03 03:32:11.735948769 +0000 UTC] "GET /samuel/jenkins-jest/hooks/2/edit HTTP/1.1" 200 41887 "http://localhost:10080/samuel/jenkins-jest/settings/integrations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 1.899160
+2018-04-03_03:32:28.66354 gitlab @ - - [2018-04-03 03:32:28.20661242 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.456691
+2018-04-03_03:32:39.23156 localhost:10080 @ - - [2018-04-03 03:32:38.527666213 +0000 UTC] "POST /samuel/jenkins-jest/hooks/2 HTTP/1.1" 302 130 "http://localhost:10080/samuel/jenkins-jest/hooks/2/edit" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.703557
+2018-04-03_03:32:39.80953 localhost:10080 @ - - [2018-04-03 03:32:39.238881228 +0000 UTC] "GET /samuel/jenkins-jest/settings/integrations HTTP/1.1" 200 44265 "http://localhost:10080/samuel/jenkins-jest/hooks/2/edit" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.570456
+2018-04-03_03:32:42.95746 localhost:10080 @ - - [2018-04-03 03:32:42.541010638 +0000 UTC] "GET /samuel/jenkins-jest/hooks/2/test?trigger=push_events HTTP/1.1" 302 130 "http://localhost:10080/samuel/jenkins-jest/settings/integrations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.416294
+2018-04-03_03:32:43.52017 localhost:10080 @ - - [2018-04-03 03:32:42.964763556 +0000 UTC] "GET /samuel/jenkins-jest/settings/integrations HTTP/1.1" 200 44366 "http://localhost:10080/samuel/jenkins-jest/settings/integrations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.555254
+2018-04-03_03:32:54.97408 localhost:10080 @ - - [2018-04-03 03:32:54.36753452 +0000 UTC] "GET /samuel/jenkins-jest/hooks/2/edit HTTP/1.1" 200 42416 "http://localhost:10080/samuel/jenkins-jest/settings/integrations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.606087
+2018-04-03_03:32:59.40628 localhost @ - - [2018-04-03 03:32:59.068171227 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.337984
+2018-04-03_03:33:00.15044 localhost:10080 @ - - [2018-04-03 03:33:00.005268344 +0000 UTC] "POST /samuel/jenkins-jest/hooks/2 HTTP/1.1" 302 130 "http://localhost:10080/samuel/jenkins-jest/hooks/2/edit" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.145024
+2018-04-03_03:33:00.78391 localhost:10080 @ - - [2018-04-03 03:33:00.156282 +0000 UTC] "GET /samuel/jenkins-jest/settings/integrations HTTP/1.1" 200 44270 "http://localhost:10080/samuel/jenkins-jest/hooks/2/edit" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.627493
+2018-04-03_03:33:03.55524 localhost:10080 @ - - [2018-04-03 03:33:03.038510265 +0000 UTC] "GET /samuel/jenkins-jest/hooks/2/test?trigger=push_events HTTP/1.1" 302 130 "http://localhost:10080/samuel/jenkins-jest/settings/integrations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.516471
+2018-04-03_03:33:04.28997 localhost:10080 @ - - [2018-04-03 03:33:03.561912333 +0000 UTC] "GET /samuel/jenkins-jest/settings/integrations HTTP/1.1" 200 44288 "http://localhost:10080/samuel/jenkins-jest/settings/integrations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.727808
+2018-04-03_03:33:08.52645 localhost:10080 @ - - [2018-04-03 03:33:08.025589779 +0000 UTC] "GET /samuel/jenkins-jest/hooks/2/edit HTTP/1.1" 200 42947 "http://localhost:10080/samuel/jenkins-jest/settings/integrations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.500046
+2018-04-03_03:33:37.81190 localhost:10080 @ - - [2018-04-03 03:33:37.666655537 +0000 UTC] "POST /samuel/jenkins-jest/hooks/2 HTTP/1.1" 302 130 "http://localhost:10080/samuel/jenkins-jest/hooks/2/edit" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.144980
+2018-04-03_03:33:38.52861 localhost:10080 @ - - [2018-04-03 03:33:37.820808422 +0000 UTC] "GET /samuel/jenkins-jest/settings/integrations HTTP/1.1" 200 44265 "http://localhost:10080/samuel/jenkins-jest/hooks/2/edit" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.707602
+2018-04-03_03:33:44.09243 localhost:10080 @ - - [2018-04-03 03:33:41.897986214 +0000 UTC] "GET /samuel/jenkins-jest/hooks/2/test?trigger=push_events HTTP/1.1" 302 130 "http://localhost:10080/samuel/jenkins-jest/settings/integrations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 2.194254
+2018-04-03_03:33:47.93099 localhost:10080 @ - - [2018-04-03 03:33:44.098885315 +0000 UTC] "GET /samuel/jenkins-jest/settings/integrations HTTP/1.1" 200 44271 "http://localhost:10080/samuel/jenkins-jest/settings/integrations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 3.831944
+2018-04-03_03:33:51.62442 gitlab @ - - [2018-04-03 03:33:51.325277312 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.298825
+2018-04-03_03:33:52.93193 gitlab @ - - [2018-04-03 03:33:51.743306493 +0000 UTC] "POST /samuel/jenkins-jest.git/git-upload-pack HTTP/1.1" 200 104030 "" "git/2.11.0" 1.181101
+2018-04-03_03:34:01.59402 localhost @ - - [2018-04-03 03:34:00.00110463 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 1.592825
+2018-04-03_03:35:02.02876 localhost @ - - [2018-04-03 03:35:01.93416462 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.094458
+2018-04-03_03:36:03.44149 localhost @ - - [2018-04-03 03:36:02.215249411 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 1.226120
+2018-04-03_03:36:41.00945 localhost:10080 @ - - [2018-04-03 03:36:40.564369566 +0000 UTC] "GET /profile HTTP/1.1" 200 28778 "http://localhost:10080/samuel/jenkins-jest/settings/integrations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.444913
+2018-04-03_03:36:48.07842 localhost:10080 @ - - [2018-04-03 03:36:47.847058501 +0000 UTC] "GET /profile/personal_access_tokens HTTP/1.1" 200 26597 "http://localhost:10080/profile" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.231211
+2018-04-03_03:37:04.80218 localhost @ - - [2018-04-03 03:37:03.605131926 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 1.196899
+2018-04-03_03:37:05.43020 localhost:10080 @ - - [2018-04-03 03:37:05.248785788 +0000 UTC] "POST /profile/personal_access_tokens/2/revoke HTTP/1.1" 302 119 "http://localhost:10080/profile/personal_access_tokens" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.181224
+2018-04-03_03:37:06.17643 localhost:10080 @ - - [2018-04-03 03:37:05.446909177 +0000 UTC] "GET /profile/personal_access_tokens HTTP/1.1" 200 26254 "http://localhost:10080/profile/personal_access_tokens" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.729411
+2018-04-03_03:37:14.30464 localhost:10080 @ - - [2018-04-03 03:37:14.18691409 +0000 UTC] "POST /profile/personal_access_tokens HTTP/1.1" 302 119 "http://localhost:10080/profile/personal_access_tokens" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.117612
+2018-04-03_03:37:14.39394 localhost:10080 @ - - [2018-04-03 03:37:14.311633799 +0000 UTC] "GET /profile/personal_access_tokens HTTP/1.1" 200 27730 "http://localhost:10080/profile/personal_access_tokens" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.082156
+2018-04-03_03:38:05.14884 localhost @ - - [2018-04-03 03:38:04.988120389 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.160605
+2018-04-03_03:39:05.49134 localhost @ - - [2018-04-03 03:39:05.275664148 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.215528
+2018-04-03_03:39:58.55409 gitlab @ - - [2018-04-03 03:39:57.711261943 +0000 UTC] "GET /api/v4/user HTTP/1.1" 200 699 "" "" 0.841983
+2018-04-03_03:39:58.98854 gitlab @ - - [2018-04-03 03:39:58.838098144 +0000 UTC] "GET /api/v4/user HTTP/1.1" 200 699 "" "" 0.150300
+2018-04-03_03:40:07.56963 localhost @ - - [2018-04-03 03:40:06.251523378 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 1.317644
+2018-04-03_03:40:30.33696 gitlab @ - - [2018-04-03 03:40:29.609481161 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.727184
+2018-04-03_03:40:39.42659 localhost:10080 @ - - [2018-04-03 03:40:38.961675726 +0000 UTC] "GET / HTTP/1.1" 200 19273 "http://localhost:10080/profile/personal_access_tokens" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.464724
+2018-04-03_03:40:43.34733 localhost:10080 @ - - [2018-04-03 03:40:40.486837864 +0000 UTC] "GET /samuel/jenkins-jest HTTP/1.1" 200 85096 "http://localhost:10080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 2.860355
+2018-04-03_03:40:44.78563 localhost:10080 @ - - [2018-04-03 03:40:43.556485773 +0000 UTC] "GET /samuel/jenkins-jest/refs/master/logs_tree/?_=1522726835910 HTTP/1.1" 200 4472 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 1.228905
+2018-04-03_03:40:52.83137 localhost:10080 @ - - [2018-04-03 03:40:43.559427201 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/README.md?format=json&viewer=rich HTTP/1.1" 304 0 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 9.271768
+2018-04-03_03:41:08.13783 localhost @ - - [2018-04-03 03:41:07.979612805 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.157807
+2018-04-03_03:41:13.34619 gitlab @ - - [2018-04-03 03:41:13.048345571 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.297601
+2018-04-03_03:42:09.23601 localhost @ - - [2018-04-03 03:42:09.05365262 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.181266
+2018-04-03_03:43:09.43916 localhost @ - - [2018-04-03 03:43:09.357268839 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.081756
+2018-04-03_03:44:09.68565 localhost @ - - [2018-04-03 03:44:09.532208728 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.153001
+2018-04-03_03:44:24.74454 localhost:10080 @ - - [2018-04-03 03:44:24.6029325 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.141431
+2018-04-03_03:44:32.43139 localhost:10080 @ - - [2018-04-03 03:44:32.368788631 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.062467
+2018-04-03_03:44:33.59339 localhost:10080 @ - - [2018-04-03 03:44:32.434411803 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 200 195 "" "git/2.7.1" 1.158766
+2018-04-03_03:44:35.03828 localhost:10080 @ - - [2018-04-03 03:44:33.619528248 +0000 UTC] "POST /samuel/jenkins-jest.git/git-receive-pack HTTP/1.1" 200 52 "" "git/2.7.1" 1.418417
+2018-04-03_03:44:48.55378 gitlab @ - - [2018-04-03 03:44:47.78504385 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.768347
+2018-04-03_03:44:49.40516 gitlab @ - - [2018-04-03 03:44:48.698312287 +0000 UTC] "POST /samuel/jenkins-jest.git/git-upload-pack HTTP/1.1" 200 729 "" "git/2.11.0" 0.706743
+2018-04-03_03:44:53.39363 localhost:10080 @ - - [2018-04-03 03:44:50.055702353 +0000 UTC] "GET /samuel/jenkins-jest HTTP/1.1" 200 85116 "http://localhost:10080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 3.337727
+2018-04-03_03:44:56.05350 localhost:10080 @ - - [2018-04-03 03:44:53.684084355 +0000 UTC] "GET /samuel/jenkins-jest/refs/master/logs_tree/?_=1522727085891 HTTP/1.1" 200 4491 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 2.368292
+2018-04-03_03:45:08.60237 localhost:10080 @ - - [2018-04-03 03:44:53.688541825 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/README.md?format=json&viewer=rich HTTP/1.1" 200 369232 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 14.906513
+2018-04-03_03:45:10.44689 localhost @ - - [2018-04-03 03:45:10.29687031 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.148777
+2018-04-03_03:45:13.71897 localhost:10080 @ - - [2018-04-03 03:44:50.055299554 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/README.md?format=json&viewer=rich HTTP/1.1" 200 369232 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 23.663514
+2018-04-03_03:46:11.15613 localhost @ - - [2018-04-03 03:46:11.018254341 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.137509
+2018-04-03_03:46:51.77196 localhost:10080 @ - - [2018-04-03 03:46:51.717239575 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.054467
+2018-04-03_03:46:57.55450 localhost:10080 @ - - [2018-04-03 03:46:57.47839026 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.075915
+2018-04-03_03:46:58.53334 localhost:10080 @ - - [2018-04-03 03:46:57.55637115 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 200 195 "" "git/2.7.1" 0.976565
+2018-04-03_03:47:00.01306 localhost:10080 @ - - [2018-04-03 03:46:58.557106632 +0000 UTC] "POST /samuel/jenkins-jest.git/git-receive-pack HTTP/1.1" 200 52 "" "git/2.7.1" 1.455551
+2018-04-03_03:47:08.08342 gitlab @ - - [2018-04-03 03:47:07.937766758 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.145362
+2018-04-03_03:47:08.59166 gitlab @ - - [2018-04-03 03:47:08.187701928 +0000 UTC] "POST /samuel/jenkins-jest.git/git-upload-pack HTTP/1.1" 200 734 "" "git/2.11.0" 0.403824
+2018-04-03_03:47:12.35380 localhost @ - - [2018-04-03 03:47:11.873230542 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.474751
+2018-04-03_03:48:13.43839 localhost @ - - [2018-04-03 03:48:13.004893131 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.432093
+2018-04-03_03:49:13.76484 localhost @ - - [2018-04-03 03:49:13.60472107 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.159948
+2018-04-03_03:50:26.70235 localhost @ - - [2018-04-03 03:50:13.866741398 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 12.833393
+2018-04-03_03:51:28.72008 localhost @ - - [2018-04-03 03:51:27.543100803 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 1.170973
+2018-04-03_03:51:30.01637 gitlab @ - - [2018-04-03 03:51:28.093277777 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 1.919754
+2018-04-03_03:51:34.05094 localhost:10080 @ - - [2018-04-03 03:51:30.605341917 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/package.json HTTP/1.1" 200 39132 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 3.442359
+2018-04-03_03:51:34.87024 localhost:10080 @ - - [2018-04-03 03:51:34.320981469 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/package.json?format=json&viewer=auxiliary HTTP/1.1" 200 1211 "http://localhost:10080/samuel/jenkins-jest/blob/master/package.json" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.546196
+2018-04-03_03:51:34.98326 localhost:10080 @ - - [2018-04-03 03:51:34.320685717 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/package.json?format=json&viewer=simple HTTP/1.1" 200 25028 "http://localhost:10080/samuel/jenkins-jest/blob/master/package.json" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.662403
+2018-04-03_03:52:29.60140 localhost @ - - [2018-04-03 03:52:29.318435695 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.280505
+2018-04-03_03:52:44.82658 localhost:10080 @ - - [2018-04-03 03:52:44.724687319 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.101356
+2018-04-03_03:52:53.46610 localhost:10080 @ - - [2018-04-03 03:52:53.363100453 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.102811
+2018-04-03_03:52:53.79974 localhost:10080 @ - - [2018-04-03 03:52:53.468310222 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 200 195 "" "git/2.7.1" 0.331216
+2018-04-03_03:52:57.18416 localhost:10080 @ - - [2018-04-03 03:52:53.823949613 +0000 UTC] "POST /samuel/jenkins-jest.git/git-receive-pack HTTP/1.1" 200 52 "" "git/2.7.1" 3.345541
+2018-04-03_03:53:08.14374 gitlab @ - - [2018-04-03 03:53:07.889057944 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.254278
+2018-04-03_03:53:08.56225 gitlab @ - - [2018-04-03 03:53:08.238766102 +0000 UTC] "POST /samuel/jenkins-jest.git/git-upload-pack HTTP/1.1" 200 767 "" "git/2.11.0" 0.323204
+2018-04-03_03:53:30.63895 localhost @ - - [2018-04-03 03:53:29.960506303 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.678203
+2018-04-03_03:54:31.12196 localhost @ - - [2018-04-03 03:54:31.003234181 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.118568
+2018-04-03_03:54:39.30887 localhost:10080 @ - - [2018-04-03 03:54:38.339786771 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/Jenkinsfile HTTP/1.1" 200 38811 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.968924
+2018-04-03_03:54:39.81066 localhost:10080 @ - - [2018-04-03 03:54:39.564653332 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/Jenkinsfile?format=json&viewer=simple HTTP/1.1" 200 6883 "http://localhost:10080/samuel/jenkins-jest/blob/master/Jenkinsfile" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.245889
+2018-04-03_03:55:31.54141 localhost @ - - [2018-04-03 03:55:31.303842605 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.236917
+2018-04-03_03:55:53.90733 localhost:10080 @ - - [2018-04-03 03:55:53.401723542 +0000 UTC] "GET /samuel HTTP/1.1" 200 18490 "http://localhost:10080/samuel/jenkins-jest/blob/master/Jenkinsfile" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.505457
+2018-04-03_03:55:54.44631 localhost:10080 @ - - [2018-04-03 03:55:53.992363774 +0000 UTC] "GET /users/samuel/calendar.json HTTP/1.1" 200 16 "http://localhost:10080/samuel" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.453772
+2018-04-03_03:55:54.81160 localhost:10080 @ - - [2018-04-03 03:55:54.04282573 +0000 UTC] "GET /samuel?limit=20&offset=0 HTTP/1.1" 200 7560 "http://localhost:10080/samuel" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.768626
+2018-04-03_03:55:55.11536 localhost:10080 @ - - [2018-04-03 03:55:54.857707286 +0000 UTC] "GET /samuel?limit=20&offset=5 HTTP/1.1" 200 23 "http://localhost:10080/samuel" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.257447
+2018-04-03_03:55:58.37532 localhost:10080 @ - - [2018-04-03 03:55:56.472157657 +0000 UTC] "GET /samuel/jenkins-jest HTTP/1.1" 200 85103 "http://localhost:10080/samuel" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 1.902994
+2018-04-03_03:55:59.80965 localhost:10080 @ - - [2018-04-03 03:55:58.500119669 +0000 UTC] "GET /samuel/jenkins-jest/refs/master/logs_tree/?_=1522727750370 HTTP/1.1" 200 4478 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 1.309305
+2018-04-03_03:56:06.95295 localhost:10080 @ - - [2018-04-03 03:55:58.501132163 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/README.md?format=json&viewer=rich HTTP/1.1" 200 369232 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 8.451575
+2018-04-03_03:56:29.77141 localhost:10080 @ - - [2018-04-03 03:56:29.645296496 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.125708
+2018-04-03_03:56:31.89303 localhost @ - - [2018-04-03 03:56:31.720666992 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.172228
+2018-04-03_03:56:33.52475 localhost:10080 @ - - [2018-04-03 03:56:33.459030176 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.065585
+2018-04-03_03:56:33.90417 localhost:10080 @ - - [2018-04-03 03:56:33.527653647 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 200 195 "" "git/2.7.1" 0.376399
+2018-04-03_03:56:37.15255 localhost:10080 @ - - [2018-04-03 03:56:33.926786581 +0000 UTC] "POST /samuel/jenkins-jest.git/git-receive-pack HTTP/1.1" 200 52 "" "git/2.7.1" 3.225455
+2018-04-03_03:57:02.18442 gitlab @ - - [2018-04-03 03:56:47.486654258 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 14.695308
+2018-04-03_03:57:04.15677 gitlab @ - - [2018-04-03 03:57:02.44415297 +0000 UTC] "POST /samuel/jenkins-jest.git/git-upload-pack HTTP/1.1" 200 874 "" "git/2.11.0" 1.711742
+2018-04-03_03:57:32.44991 localhost @ - - [2018-04-03 03:57:32.121815121 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.327368
+2018-04-03_03:58:32.78128 localhost @ - - [2018-04-03 03:58:32.564155843 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.216912
+2018-04-03_03:59:33.10958 localhost @ - - [2018-04-03 03:59:32.891841922 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.217657
+2018-04-03_04:00:34.33887 localhost @ - - [2018-04-03 04:00:33.209624254 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 1.129140
+2018-04-03_04:01:34.52654 localhost @ - - [2018-04-03 04:01:34.425597608 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.100797
+2018-04-03_04:02:34.69789 localhost @ - - [2018-04-03 04:02:34.61684764 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.080911
+2018-04-03_04:03:35.08175 localhost @ - - [2018-04-03 04:03:34.784467592 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.297195
+2018-04-03_04:04:35.40132 localhost @ - - [2018-04-03 04:04:35.171657903 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.229568
+2018-04-03_04:05:35.79308 localhost @ - - [2018-04-03 04:05:35.543175954 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.249777
+2018-04-03_04:06:36.26598 localhost @ - - [2018-04-03 04:06:36.038998322 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.226767
+2018-04-03_04:07:36.46032 localhost @ - - [2018-04-03 04:07:36.351777658 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.108478
+2018-04-03_04:08:37.18342 localhost @ - - [2018-04-03 04:08:36.774595346 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.381432
+2018-04-03_04:09:37.87618 localhost @ - - [2018-04-03 04:09:37.700009112 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.175439
+2018-04-03_04:10:42.28094 localhost @ - - [2018-04-03 04:10:38.031477598 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 4.249238
+2018-04-03_04:11:43.47253 localhost @ - - [2018-04-03 04:11:42.541232596 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.930753
+2018-04-03_04:12:18.51752 localhost:10080 @ - - [2018-04-03 04:12:10.463453807 +0000 UTC] "GET /samuel/jenkins-jest/settings/integrations HTTP/1.1" 200 44132 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 8.050805
+2018-04-03_04:12:26.35342 localhost:10080 @ - - [2018-04-03 04:12:22.847284296 +0000 UTC] "GET /samuel/jenkins-jest/hooks/2/test?trigger=push_events HTTP/1.1" 302 130 "http://localhost:10080/samuel/jenkins-jest/settings/integrations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 3.505976
+2018-04-03_04:12:28.19321 localhost:10080 @ - - [2018-04-03 04:12:26.362135392 +0000 UTC] "GET /samuel/jenkins-jest/settings/integrations HTTP/1.1" 200 44271 "http://localhost:10080/samuel/jenkins-jest/settings/integrations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 1.830748
+2018-04-03_04:12:37.46156 gitlab @ - - [2018-04-03 04:12:37.096508879 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.364949
+2018-04-03_04:12:45.59682 gitlab @ - - [2018-04-03 04:12:45.086402779 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.510342
+2018-04-03_04:12:46.75830 localhost @ - - [2018-04-03 04:12:44.076455579 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 2.681619
+2018-04-03_04:12:47.06631 gitlab @ - - [2018-04-03 04:12:45.669455979 +0000 UTC] "POST /samuel/jenkins-jest.git/git-upload-pack HTTP/1.1" 200 104426 "" "git/2.11.0" 1.396581
+2018-04-03_04:13:47.67041 localhost @ - - [2018-04-03 04:13:47.162663579 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.507565
+2018-04-03_04:14:49.01053 localhost @ - - [2018-04-03 04:14:47.956169805 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 1.054220
+2018-04-03_04:15:49.90824 localhost @ - - [2018-04-03 04:15:49.108345093 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.799515
+2018-04-03_04:16:50.15222 localhost @ - - [2018-04-03 04:16:50.066333193 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.085768
+2018-04-03_04:17:50.37585 localhost @ - - [2018-04-03 04:17:50.240673083 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.135053
+2018-04-03_04:18:51.17971 localhost @ - - [2018-04-03 04:18:50.512395657 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.667094
+2018-04-03_04:19:51.34469 localhost @ - - [2018-04-03 04:19:51.269063737 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.075303
+2018-04-03_04:20:51.57011 localhost @ - - [2018-04-03 04:20:51.430176743 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.139804
+2018-04-03_04:21:55.69204 localhost @ - - [2018-04-03 04:21:51.662816768 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 4.029112
+2018-04-03_04:22:55.97957 localhost @ - - [2018-04-03 04:22:55.895103371 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.084321
+2018-04-03_04:23:56.15130 localhost @ - - [2018-04-03 04:23:56.070388487 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.080791
+2018-04-03_04:24:56.33070 localhost @ - - [2018-04-03 04:24:56.234259914 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.096292
+2018-04-03_04:25:56.58372 localhost @ - - [2018-04-03 04:25:56.421747826 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.161924
+2018-04-03_04:26:56.75103 localhost @ - - [2018-04-03 04:26:56.663855117 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.087033
+2018-04-03_04:27:56.98544 localhost @ - - [2018-04-03 04:27:56.832542351 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.152797
+2018-04-03_04:28:57.25435 localhost @ - - [2018-04-03 04:28:57.060493422 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.193702
+2018-04-03_04:29:57.41878 localhost @ - - [2018-04-03 04:29:57.334419414 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.084191
+2018-04-03_04:30:57.63573 localhost @ - - [2018-04-03 04:30:57.499499714 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.135528
+2018-04-03_04:31:57.90808 localhost @ - - [2018-04-03 04:31:57.738123318 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.169828
+2018-04-03_04:32:58.09406 localhost @ - - [2018-04-03 04:32:57.993925056 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.100043
+2018-04-03_04:33:58.37937 localhost @ - - [2018-04-03 04:33:58.168187185 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.211080
+2018-04-03_04:34:58.76321 localhost @ - - [2018-04-03 04:34:58.468522046 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.294574
+2018-04-03_04:35:59.05819 localhost @ - - [2018-04-03 04:35:58.961094939 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.096871
+2018-04-03_04:36:59.20661 localhost @ - - [2018-04-03 04:36:59.123742078 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.082743
+2018-04-03_04:37:59.37151 localhost @ - - [2018-04-03 04:37:59.280720553 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.090676
+2018-04-03_04:38:59.56233 localhost @ - - [2018-04-03 04:38:59.438431961 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.123778
+2018-04-03_04:39:59.78380 localhost @ - - [2018-04-03 04:39:59.700652589 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.083014
+2018-04-03_04:41:00.03376 localhost @ - - [2018-04-03 04:40:59.863201377 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.170438
+2018-04-03_04:42:00.19577 localhost @ - - [2018-04-03 04:42:00.117303665 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.078270
+2018-04-03_04:43:00.46934 localhost @ - - [2018-04-03 04:43:00.276007377 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.193169
+2018-04-03_04:44:00.64078 localhost @ - - [2018-04-03 04:44:00.548889171 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.091469
+2018-04-03_04:45:00.85815 localhost @ - - [2018-04-03 04:45:00.720835658 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.137195
+2018-04-03_04:46:01.07443 localhost @ - - [2018-04-03 04:46:00.945094076 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.129157
+2018-04-03_04:47:01.28211 localhost @ - - [2018-04-03 04:47:01.177600268 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.104187
+2018-04-03_04:48:01.49196 localhost @ - - [2018-04-03 04:48:01.384324558 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.107217
+2018-04-03_04:48:13.53002 localhost:10080 @ - - [2018-04-03 04:48:13.408375427 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.121468
+2018-04-03_04:48:19.00785 localhost:10080 @ - - [2018-04-03 04:48:18.958686584 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.048973
+2018-04-03_04:48:19.28122 localhost:10080 @ - - [2018-04-03 04:48:19.010176926 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 200 195 "" "git/2.7.1" 0.270853
+2018-04-03_04:48:21.81575 localhost:10080 @ - - [2018-04-03 04:48:19.304836622 +0000 UTC] "POST /samuel/jenkins-jest.git/git-receive-pack HTTP/1.1" 200 52 "" "git/2.7.1" 2.510592
+2018-04-03_04:48:31.77125 gitlab @ - - [2018-04-03 04:48:31.644520596 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.126565
+2018-04-03_04:48:32.45797 gitlab @ - - [2018-04-03 04:48:31.859408099 +0000 UTC] "POST /samuel/jenkins-jest.git/git-upload-pack HTTP/1.1" 200 894 "" "git/2.11.0" 0.593568
+2018-04-03_04:49:01.85435 localhost @ - - [2018-04-03 04:49:01.686491702 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.167275
+2018-04-03_04:49:25.64081 localhost:10080 @ - - [2018-04-03 04:49:25.516155314 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.124526
+2018-04-03_04:49:29.10725 localhost:10080 @ - - [2018-04-03 04:49:29.02496893 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.082086
+2018-04-03_04:49:29.75338 localhost:10080 @ - - [2018-04-03 04:49:29.109634176 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.643586
+2018-04-03_04:49:40.78918 localhost:10080 @ - - [2018-04-03 04:49:40.712956615 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.076097
+2018-04-03_04:49:44.91095 localhost:10080 @ - - [2018-04-03 04:49:44.85299586 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.057833
+2018-04-03_04:49:45.17594 localhost:10080 @ - - [2018-04-03 04:49:44.913511088 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 200 195 "" "git/2.7.1" 0.262188
+2018-04-03_04:49:48.01089 localhost:10080 @ - - [2018-04-03 04:49:45.206750994 +0000 UTC] "POST /samuel/jenkins-jest.git/git-receive-pack HTTP/1.1" 200 52 "" "git/2.7.1" 2.804029
+2018-04-03_04:49:56.53878 gitlab @ - - [2018-04-03 04:49:56.397395675 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.141260
+2018-04-03_04:49:57.09121 gitlab @ - - [2018-04-03 04:49:56.719777104 +0000 UTC] "POST /samuel/jenkins-jest.git/git-upload-pack HTTP/1.1" 200 947 "" "git/2.11.0" 0.371170
+2018-04-03_04:50:01.38522 gitlab @ - - [2018-04-03 04:50:01.247791165 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.137229
+2018-04-03_04:50:02.09857 gitlab @ - - [2018-04-03 04:50:01.439130747 +0000 UTC] "POST /samuel/jenkins-jest.git/git-upload-pack HTTP/1.1" 200 106401 "" "git/2.11.0" 0.659231
+2018-04-03_04:50:02.52067 localhost @ - - [2018-04-03 04:50:02.238902262 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.281618
+2018-04-03_04:50:03.23333 gitlab @ - - [2018-04-03 04:50:03.099102047 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.134019
+2018-04-03_04:51:03.03034 localhost @ - - [2018-04-03 04:51:02.68915044 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.340995
+2018-04-03_04:51:22.88203 localhost:10080 @ - - [2018-04-03 04:51:22.81465454 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.067230
+2018-04-03_04:51:27.80429 localhost:10080 @ - - [2018-04-03 04:51:27.74232524 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 401 26 "" "git/2.7.1" 0.061769
+2018-04-03_04:51:28.03421 localhost:10080 @ - - [2018-04-03 04:51:27.80641734 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-receive-pack HTTP/1.1" 200 195 "" "git/2.7.1" 0.227601
+2018-04-03_04:51:29.55181 localhost:10080 @ - - [2018-04-03 04:51:28.06977357 +0000 UTC] "POST /samuel/jenkins-jest.git/git-receive-pack HTTP/1.1" 200 52 "" "git/2.7.1" 1.481911
+2018-04-03_04:51:36.61747 gitlab @ - - [2018-04-03 04:51:36.474866024 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.142287
+2018-04-03_04:51:37.17067 gitlab @ - - [2018-04-03 04:51:36.707302347 +0000 UTC] "POST /samuel/jenkins-jest.git/git-upload-pack HTTP/1.1" 200 994 "" "git/2.11.0" 0.463133
+2018-04-03_04:51:40.99378 gitlab @ - - [2018-04-03 04:51:40.737170506 +0000 UTC] "GET /samuel/jenkins-jest.git/info/refs?service=git-upload-pack HTTP/1.1" 200 351 "" "git/2.11.0" 0.256342
+2018-04-03_04:51:41.46360 gitlab @ - - [2018-04-03 04:51:41.094339932 +0000 UTC] "POST /samuel/jenkins-jest.git/git-upload-pack HTTP/1.1" 200 994 "" "git/2.11.0" 0.368959
+2018-04-03_04:52:05.78648 localhost @ - - [2018-04-03 04:52:03.55465516 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 2.222030
+2018-04-03_04:53:14.58028 localhost @ - - [2018-04-03 04:53:07.613306424 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 6.964521
+2018-04-03_04:55:05.82857 localhost @ - - [2018-04-03 04:54:25.069968832 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 40.719536
+2018-04-03_04:57:01.08216 2018/04/03 04:57:01 error: GET "/help": badgateway: failed after 63s: EOF
+2018-04-03_04:57:01.14756 localhost @ - - [2018-04-03 04:55:56.518105907 +0000 UTC] "GET /help HTTP/1.1" 502 2916 "" "curl/7.56.1" 64.629344
+2018-04-03_04:57:18.21918 localhost @ - - [2018-04-03 04:57:15.759770074 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 2.459270
+2018-04-03_04:58:21.55588 localhost @ - - [2018-04-03 04:58:18.612970792 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 2.941958
+2018-04-03_04:59:43.68115 localhost @ - - [2018-04-03 04:59:21.738168811 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 21.941339
+2018-04-03_05:00:44.25108 localhost @ - - [2018-04-03 05:00:44.076669236 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.173607
+2018-04-03_05:01:44.99644 localhost @ - - [2018-04-03 05:01:44.621715574 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.374311
+2018-04-03_05:02:46.44050 localhost @ - - [2018-04-03 05:02:45.509821502 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.923406
+2018-04-03_05:03:47.11786 localhost @ - - [2018-04-03 05:03:46.91075199 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.203910
+2018-04-03_05:04:47.68705 localhost @ - - [2018-04-03 05:04:47.491316466 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.191884
+2018-04-03_05:05:49.39117 localhost @ - - [2018-04-03 05:05:48.207959568 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 1.172064
+2018-04-03_05:06:50.58401 localhost @ - - [2018-04-03 05:06:49.746901316 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.830356
+2018-04-03_05:07:51.77466 localhost @ - - [2018-04-03 05:07:51.153972932 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.620183
+2018-04-03_05:08:53.01186 localhost @ - - [2018-04-03 05:08:52.075128327 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.936384
+2018-04-03_05:09:53.66355 localhost @ - - [2018-04-03 05:09:53.273590699 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.389753
+2018-04-03_05:10:54.51128 localhost @ - - [2018-04-03 05:10:53.941818222 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.568917
+2018-04-03_05:11:54.81356 localhost @ - - [2018-04-03 05:11:54.641008955 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.172339
+2018-04-03_05:12:55.06367 localhost @ - - [2018-04-03 05:12:54.93106116 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.132514
+2018-04-03_05:13:55.28548 localhost @ - - [2018-04-03 05:13:55.179377903 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.105921
+2018-04-03_05:14:55.58526 localhost @ - - [2018-04-03 05:14:55.39865602 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.186454
+2018-04-03_05:15:55.78206 localhost @ - - [2018-04-03 05:15:55.692541138 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.089370
+2018-04-03_05:16:55.97891 localhost @ - - [2018-04-03 05:16:55.854684756 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.124126
+2018-04-03_05:17:56.54665 localhost @ - - [2018-04-03 05:17:56.068348198 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.478146
+2018-04-03_05:18:41.05817 localhost:10080 @ - - [2018-04-03 05:18:36.254952451 +0000 UTC] "GET /samuel/jenkins-jest HTTP/1.1" 200 85103 "http://localhost:10080/samuel/jenkins-jest/settings/integrations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 4.800624
+2018-04-03_05:18:42.69271 localhost:10080 @ - - [2018-04-03 05:18:41.392323082 +0000 UTC] "GET /samuel/jenkins-jest/refs/master/logs_tree/?_=1522732709508 HTTP/1.1" 200 4478 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 1.300144
+2018-04-03_05:18:48.62231 2018/04/03 05:18:48 error: GET "/samuel/jenkins-jest/blob/master/README.md?format=json&viewer=rich": badgateway: failed after 7s: context canceled
+2018-04-03_05:18:48.62284 localhost:10080 @ - - [2018-04-03 05:18:41.392564561 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/README.md?format=json&viewer=rich HTTP/1.1" 502 2916 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 7.229486
+2018-04-03_05:18:49.03209 localhost:10080 @ - - [2018-04-03 05:18:36.250061898 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/README.md?format=json&viewer=rich HTTP/1.1" 200 369232 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 12.781761
+2018-04-03_05:18:52.49503 localhost:10080 @ - - [2018-04-03 05:18:48.604504289 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/Jenkinsfile?format=json&viewer=simple HTTP/1.1" 200 7648 "http://localhost:10080/samuel/jenkins-jest/blob/master/Jenkinsfile" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 3.889920
+2018-04-03_05:18:54.65153 localhost:10080 @ - - [2018-04-03 05:18:48.605716283 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/Jenkinsfile HTTP/1.1" 200 38811 "http://localhost:10080/samuel/jenkins-jest" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 6.043529
+2018-04-03_05:18:55.12099 localhost:10080 @ - - [2018-04-03 05:18:54.764711146 +0000 UTC] "GET /samuel/jenkins-jest/blob/master/Jenkinsfile?format=json&viewer=simple HTTP/1.1" 304 0 "http://localhost:10080/samuel/jenkins-jest/blob/master/Jenkinsfile" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7" 0.354281
+2018-04-03_05:18:57.28757 localhost @ - - [2018-04-03 05:18:56.96454208 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.321559
+2018-04-03_05:19:58.26450 localhost @ - - [2018-04-03 05:19:57.660612474 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.602313
+2018-04-03_05:20:58.78764 localhost @ - - [2018-04-03 05:20:58.646821527 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.140103
+2018-04-03_05:21:59.58858 localhost @ - - [2018-04-03 05:21:59.063738067 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.522571
+2018-04-03_05:22:59.99769 localhost @ - - [2018-04-03 05:22:59.855837823 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.140803
+2018-04-03_05:24:00.44624 localhost @ - - [2018-04-03 05:24:00.329272204 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.115384
+2018-04-03_05:25:00.96274 localhost @ - - [2018-04-03 05:25:00.720104021 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.241984
+2018-04-03_05:27:04.40897 2018/04/03 05:27:04 error: GET "/help": badgateway: failed after 63s: EOF
+2018-04-03_05:27:04.48264 localhost @ - - [2018-04-03 05:26:01.105091134 +0000 UTC] "GET /help HTTP/1.1" 502 2916 "" "curl/7.56.1" 63.377116
+2018-04-03_05:28:00.01499 localhost @ - - [2018-04-03 05:27:40.320448457 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 19.694068
+2018-04-03_05:29:00.24042 localhost @ - - [2018-04-03 05:29:00.133154455 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.107149
+2018-04-03_05:30:00.61366 localhost @ - - [2018-04-03 05:30:00.369555099 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.243909
+2018-04-03_05:31:01.24827 localhost @ - - [2018-04-03 05:31:00.729972503 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.518122
+2018-04-03_05:32:01.60323 localhost @ - - [2018-04-03 05:32:01.471933441 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.131131
+2018-04-03_05:33:01.84440 localhost @ - - [2018-04-03 05:33:01.717829734 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.126465
+2018-04-03_05:34:02.12172 localhost @ - - [2018-04-03 05:34:01.936244076 +0000 UTC] "GET /help HTTP/1.1" 200 29376 "" "curl/7.56.1" 0.185030

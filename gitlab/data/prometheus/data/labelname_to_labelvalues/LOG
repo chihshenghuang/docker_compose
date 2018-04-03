@@ -1,0 +1,18 @@
+=============== Apr 3, 2018 (UTC) ===============
+01:44:25.520445 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+01:44:25.557078 db@open opening
+01:44:25.560548 version@stat F·[] S·0B[] Sc·[]
+01:44:25.571628 db@janitor F·2 G·0
+01:44:25.572369 db@open done T·14.859ms
+03:25:12.957485 db@close closing
+03:25:12.958530 db@close done T·1.044877ms
+=============== Apr 3, 2018 (UTC) ===============
+03:27:21.624763 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+03:27:21.633041 version@stat F·[] S·0B[] Sc·[]
+03:27:21.634017 db@open opening
+03:27:21.642130 journal@recovery F·1
+03:27:21.643008 journal@recovery recovering @1
+03:27:21.663604 memdb@flush created L0@2 N·107 S·136KiB "\x04db,v24":"\x1cre.._id,v1"
+03:27:21.668251 version@stat F·[1] S·136KiB[136KiB] Sc·[0.25]
+03:27:21.680902 db@janitor F·3 G·0
+03:27:21.681370 db@open done T·46.850463ms

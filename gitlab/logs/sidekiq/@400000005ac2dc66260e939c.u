@@ -1,0 +1,137 @@
+2018-04-02_06:20:24.77626 2018-04-02T06:20:24.776Z 852 TID-ouxtd8lpc INFO: Booting Sidekiq 5.0.4 with redis options {:path=>"/var/opt/gitlab/redis/redis.socket", :namespace=>"resque:gitlab", :id=>"Sidekiq-server-PID-852", :url=>nil}
+2018-04-02_06:20:24.86780 2018-04-02T06:20:24.867Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: stuck_ci_jobs_worker
+2018-04-02_06:20:24.87103 2018-04-02T06:20:24.870Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: expire_build_artifacts_worker
+2018-04-02_06:20:24.87459 2018-04-02T06:20:24.874Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: pipeline_schedule_worker
+2018-04-02_06:20:24.88119 2018-04-02T06:20:24.881Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: repository_check_worker
+2018-04-02_06:20:24.88517 2018-04-02T06:20:24.885Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: admin_email_worker
+2018-04-02_06:20:24.88829 2018-04-02T06:20:24.888Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: repository_archive_cache_worker
+2018-04-02_06:20:24.89389 2018-04-02T06:20:24.893Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: import_export_project_cleanup_worker
+2018-04-02_06:20:24.89833 2018-04-02T06:20:24.898Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: requests_profiles_worker
+2018-04-02_06:20:24.90353 2018-04-02T06:20:24.902Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: remove_expired_members_worker
+2018-04-02_06:20:24.90791 2018-04-02T06:20:24.907Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: remove_expired_group_links_worker
+2018-04-02_06:20:24.91134 2018-04-02T06:20:24.911Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: prune_old_events_worker
+2018-04-02_06:20:24.91552 2018-04-02T06:20:24.915Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: trending_projects_worker
+2018-04-02_06:20:24.92221 2018-04-02T06:20:24.922Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: remove_unreferenced_lfs_objects_worker
+2018-04-02_06:20:24.92568 2018-04-02T06:20:24.925Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: stuck_import_jobs_worker
+2018-04-02_06:20:24.92964 2018-04-02T06:20:24.929Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: gitlab_usage_ping_worker
+2018-04-02_06:20:24.93561 2018-04-02T06:20:24.935Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: schedule_update_user_activity_worker
+2018-04-02_06:20:24.93944 2018-04-02T06:20:24.939Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: remove_old_web_hook_logs_worker
+2018-04-02_06:20:24.94339 2018-04-02T06:20:24.943Z 852 TID-ouxtd8lpc INFO: Cron Jobs - add job with name: stuck_merge_jobs_worker
+2018-04-02_06:20:42.61343 2018-04-02T06:20:42.613Z 852 TID-ouxtd8lpc INFO: Running in ruby 2.3.5p376 (2017-09-14 revision 59905) [x86_64-linux]
+2018-04-02_06:20:42.61459 2018-04-02T06:20:42.613Z 852 TID-ouxtd8lpc INFO: See LICENSE and the LGPL-3.0 for licensing details.
+2018-04-02_06:20:42.61491 2018-04-02T06:20:42.613Z 852 TID-ouxtd8lpc INFO: Upgrade to Sidekiq Pro for more features and support: http://sidekiq.org
+2018-04-02_06:20:42.61519 2018-04-02T06:20:42.614Z 852 TID-ouxtd8lpc INFO: Starting processing, hit Ctrl-C to stop
+2018-04-02_06:50:20.81337 2018-04-02T06:50:20.808Z 852 TID-ouxqarx0c ExpireBuildArtifactsWorker JID-43cde74035a2f8e09ffc6f15 INFO: start
+2018-04-02_06:50:22.16898 2018-04-02T06:50:22.168Z 852 TID-ouxqarx0c ExpireBuildArtifactsWorker JID-43cde74035a2f8e09ffc6f15 INFO: done: 1.363 sec
+2018-04-02_06:57:08.39986 2018-04-02T06:57:08.399Z 852 TID-ouxqarx7k ActionMailer::DeliveryJob JID-da7fb4aea38ef1447afbacb3 INFO: start
+2018-04-02_06:57:13.69160 sh: 1: /usr/sbin/sendmail: not found
+2018-04-02_06:57:13.71393 2018-04-02T06:57:13.713Z 852 TID-ouxqarx7k ActionMailer::DeliveryJob JID-da7fb4aea38ef1447afbacb3 INFO: done: 5.314 sec
+2018-04-02_07:00:18.30467 2018-04-02T07:00:18.304Z 852 TID-ouxqarxfc ImportExportProjectCleanupWorker JID-9e52f31a912f4ecacc270bcf INFO: start
+2018-04-02_07:00:18.40111 2018-04-02T07:00:18.400Z 852 TID-ouxqarxfc ImportExportProjectCleanupWorker JID-9e52f31a912f4ecacc270bcf INFO: done: 0.096 sec
+2018-04-02_07:00:18.40287 2018-04-02T07:00:18.402Z 852 TID-ouxqapj1c RepositoryArchiveCacheWorker JID-9eff41673259b84d34bb07ae INFO: start
+2018-04-02_07:00:18.44701 2018-04-02T07:00:18.446Z 852 TID-ouxqapj1c RepositoryArchiveCacheWorker JID-9eff41673259b84d34bb07ae INFO: done: 0.044 sec
+2018-04-02_07:00:18.45215 2018-04-02T07:00:18.450Z 852 TID-ouxqary38 StuckCiJobsWorker JID-0a641a53de619053e2050dfd INFO: start
+2018-04-02_07:00:18.57104 2018-04-02T07:00:18.570Z 852 TID-ouxqary38 StuckCiJobsWorker JID-0a641a53de619053e2050dfd INFO: done: 0.12 sec
+2018-04-02_07:15:12.00763 2018-04-02T07:15:11.997Z 852 TID-ouxqaryec StuckImportJobsWorker JID-668708853f161493e56c7dd9 INFO: start
+2018-04-02_07:15:12.22296 2018-04-02T07:15:12.222Z 852 TID-ouxqaryec StuckImportJobsWorker JID-668708853f161493e56c7dd9 INFO: done: 0.226 sec
+2018-04-02_07:15:15.82613 2018-04-02T07:15:15.825Z 852 TID-ouxqapj1c PostReceive JID-a6b4750518c2916ed3a85ec9 INFO: start
+2018-04-02_07:15:17.24035 2018-04-02T07:15:17.240Z 852 TID-ouxqarpeg UpdateMergeRequestsWorker JID-8184ce8d7ac9d292bcef8a4f INFO: start
+2018-04-02_07:15:17.95930 2018-04-02T07:15:17.958Z 852 TID-ouxqarpeg UpdateMergeRequestsWorker JID-8184ce8d7ac9d292bcef8a4f INFO: done: 0.718 sec
+2018-04-02_07:15:18.73549 2018-04-02T07:15:18.734Z 852 TID-ouxqapl6k SystemHookPushWorker JID-3b4ecad0ded1c8fd9d1152fc INFO: start
+2018-04-02_07:15:18.84617 2018-04-02T07:15:18.846Z 852 TID-ouxqarwto WebHookWorker JID-eb07c01e2bef175b8f964bfa INFO: start
+2018-04-02_07:15:18.87954 2018-04-02T07:15:18.879Z 852 TID-ouxqaryec ProjectCacheWorker JID-3c2879a8a29e9892eb8e73b2 INFO: start
+2018-04-02_07:15:18.99087 2018-04-02T07:15:18.990Z 852 TID-ouxqapl6k SystemHookPushWorker JID-3b4ecad0ded1c8fd9d1152fc INFO: done: 0.256 sec
+2018-04-02_07:15:18.99350 2018-04-02T07:15:18.993Z 852 TID-ouxqapj1c PostReceive JID-a6b4750518c2916ed3a85ec9 INFO: done: 3.167 sec
+2018-04-02_07:15:19.41065 2018-04-02T07:15:19.410Z 852 TID-ouxqaryec ProjectCacheWorker JID-3c2879a8a29e9892eb8e73b2 INFO: done: 0.531 sec
+2018-04-02_07:15:19.44793 2018-04-02T07:15:19.447Z 852 TID-ouxqarwto WebHookWorker JID-eb07c01e2bef175b8f964bfa INFO: done: 0.602 sec
+2018-04-02_07:19:25.61840 2018-04-02T07:19:25.618Z 852 TID-ouxqapj1c PipelineScheduleWorker JID-39b93c06405a6d6f5a071c8b INFO: start
+2018-04-02_07:19:25.68836 2018-04-02T07:19:25.687Z 852 TID-ouxqapj1c PipelineScheduleWorker JID-39b93c06405a6d6f5a071c8b INFO: done: 0.07 sec
+2018-04-02_07:20:19.82333 2018-04-02T07:20:19.822Z 852 TID-ouxqarxfc RepositoryCheck::BatchWorker JID-b1fe931fa9f5f5bd2efc06be INFO: start
+2018-04-02_07:20:19.95782 2018-04-02T07:20:19.956Z 852 TID-ouxqarxfc RepositoryCheck::BatchWorker JID-b1fe931fa9f5f5bd2efc06be INFO: done: 0.134 sec
+2018-04-02_07:22:36.32493 2018-04-02T07:22:36.324Z 852 TID-ouxqary38 GitlabShellWorker JID-3a63e0b35274237c85a9dba7 INFO: start
+2018-04-02_07:22:36.34575 2018-04-02T07:22:36.345Z 852 TID-ouxqapitk ActionMailer::DeliveryJob JID-a48fda2f83ecbdee073fee54 INFO: start
+2018-04-02_07:22:36.62420 2018-04-02T07:22:36.623Z 852 TID-ouxqary38 GitlabShellWorker JID-3a63e0b35274237c85a9dba7 INFO: done: 0.299 sec
+2018-04-02_07:22:36.67857 sh: 1: /usr/sbin/sendmail: not found
+2018-04-02_07:22:36.69114 2018-04-02T07:22:36.690Z 852 TID-ouxqapitk ActionMailer::DeliveryJob JID-a48fda2f83ecbdee073fee54 INFO: done: 0.346 sec
+2018-04-02_07:31:19.17212 2018-04-02T07:31:19.171Z 852 TID-ouxqapitk GitlabShellWorker JID-c3a7990acd8effaf88466357 INFO: start
+2018-04-02_07:31:19.68480 2018-04-02T07:31:19.684Z 852 TID-ouxqapitk GitlabShellWorker JID-c3a7990acd8effaf88466357 INFO: done: 0.513 sec
+2018-04-02_07:33:23.72599 2018-04-02T07:33:23.725Z 852 TID-ouxqarxvg GitlabShellWorker JID-95589e53683c82281f433ff3 INFO: start
+2018-04-02_07:33:23.76203 2018-04-02T07:33:23.758Z 852 TID-ouxqarwto ActionMailer::DeliveryJob JID-a72ff0e7949f3e8c1a95c47b INFO: start
+2018-04-02_07:33:23.89091 2018-04-02T07:33:23.890Z 852 TID-ouxqarxvg GitlabShellWorker JID-95589e53683c82281f433ff3 INFO: done: 0.166 sec
+2018-04-02_07:33:23.97762 sh: 1: /usr/sbin/sendmail: not found
+2018-04-02_07:33:23.99426 2018-04-02T07:33:23.993Z 852 TID-ouxqarwto ActionMailer::DeliveryJob JID-a72ff0e7949f3e8c1a95c47b INFO: done: 0.235 sec
+2018-04-02_07:37:08.10322 2018-04-02T07:37:08.103Z 852 TID-ouxqarpeg GitlabShellWorker JID-b5468b1afc5e33eb75b264e9 INFO: start
+2018-04-02_07:37:08.11196 2018-04-02T07:37:08.111Z 852 TID-ouxqarx7k ActionMailer::DeliveryJob JID-01f88da89db2c1edcad92f21 INFO: start
+2018-04-02_07:37:08.24096 sh: 1: /usr/sbin/sendmail: not found
+2018-04-02_07:37:08.27343 2018-04-02T07:37:08.272Z 852 TID-ouxqarpeg GitlabShellWorker JID-b5468b1afc5e33eb75b264e9 INFO: done: 0.17 sec
+2018-04-02_07:37:08.28869 2018-04-02T07:37:08.288Z 852 TID-ouxqarx7k ActionMailer::DeliveryJob JID-01f88da89db2c1edcad92f21 INFO: done: 0.177 sec
+2018-04-02_07:50:09.71235 2018-04-02T07:50:09.712Z 852 TID-ouxqarxvg ExpireBuildArtifactsWorker JID-28005643d4e8e36ce2e9d51e INFO: start
+2018-04-02_07:50:09.78075 2018-04-02T07:50:09.780Z 852 TID-ouxqarxvg ExpireBuildArtifactsWorker JID-28005643d4e8e36ce2e9d51e INFO: done: 0.068 sec
+2018-04-02_07:52:39.16267 2018-04-02T07:52:39.162Z 852 TID-ouxqarwto GitlabShellWorker JID-35c05d30b5a49730e6cefed5 INFO: start
+2018-04-02_07:52:39.32032 2018-04-02T07:52:39.318Z 852 TID-ouxqarwto GitlabShellWorker JID-35c05d30b5a49730e6cefed5 INFO: done: 0.156 sec
+2018-04-02_07:52:42.04276 2018-04-02T07:52:42.042Z 852 TID-ouxqary38 GitlabShellWorker JID-2edd0c208d77f948aadaa6ae INFO: start
+2018-04-02_07:52:42.16826 2018-04-02T07:52:42.168Z 852 TID-ouxqary38 GitlabShellWorker JID-2edd0c208d77f948aadaa6ae INFO: done: 0.126 sec
+2018-04-02_07:54:49.17764 2018-04-02T07:54:49.177Z 852 TID-ouxqarwto GitlabShellWorker JID-b10391722aacb8f2daf1f18b INFO: start
+2018-04-02_07:54:49.18704 2018-04-02T07:54:49.186Z 852 TID-ouxqarxno ActionMailer::DeliveryJob JID-b3ad60f7f1c09bdd04658063 INFO: start
+2018-04-02_07:54:49.23962 sh: 1: /usr/sbin/sendmail: not found
+2018-04-02_07:54:49.25173 2018-04-02T07:54:49.250Z 852 TID-ouxqarxno ActionMailer::DeliveryJob JID-b3ad60f7f1c09bdd04658063 INFO: done: 0.064 sec
+2018-04-02_07:54:49.34066 2018-04-02T07:54:49.340Z 852 TID-ouxqarwto GitlabShellWorker JID-b10391722aacb8f2daf1f18b INFO: done: 0.163 sec
+2018-04-02_07:57:41.81755 2018-04-02T07:57:41.817Z 852 TID-ouxqarwto ProjectDestroyWorker JID-e51427f7c4db1f02e16ba97c INFO: start
+2018-04-02_07:57:43.38028 2018-04-02T07:57:43.380Z 852 TID-ouxqarwto ProjectDestroyWorker JID-e51427f7c4db1f02e16ba97c INFO: done: 1.563 sec
+2018-04-02_08:00:34.50724 2018-04-02T08:00:34.506Z 852 TID-ouxqarx0c ImportExportProjectCleanupWorker JID-9102df9a3b0f3450c4430bc1 INFO: start
+2018-04-02_08:00:34.54541 2018-04-02T08:00:34.545Z 852 TID-ouxqapkw0 StuckMergeJobsWorker JID-497019200568d2aa96518f5a INFO: start
+2018-04-02_08:00:34.54944 2018-04-02T08:00:34.549Z 852 TID-ouxqapiko StuckCiJobsWorker JID-1d8a2cd6041bc038883745ad INFO: start
+2018-04-02_08:00:34.55663 2018-04-02T08:00:34.556Z 852 TID-ouxqapj80 RepositoryArchiveCacheWorker JID-9d505565f461d3c703cf207f INFO: start
+2018-04-02_08:00:34.58126 2018-04-02T08:00:34.581Z 852 TID-ouxqapj80 RepositoryArchiveCacheWorker JID-9d505565f461d3c703cf207f INFO: done: 0.025 sec
+2018-04-02_08:00:34.58206 2018-04-02T08:00:34.581Z 852 TID-ouxqarx0c ImportExportProjectCleanupWorker JID-9102df9a3b0f3450c4430bc1 INFO: done: 0.075 sec
+2018-04-02_08:00:34.64207 2018-04-02T08:00:34.641Z 852 TID-ouxqapiko StuckCiJobsWorker JID-1d8a2cd6041bc038883745ad INFO: done: 0.093 sec
+2018-04-02_08:00:34.64425 2018-04-02T08:00:34.643Z 852 TID-ouxqapkw0 StuckMergeJobsWorker JID-497019200568d2aa96518f5a INFO: done: 0.099 sec
+2018-04-02_08:02:03.41400 2018-04-02T08:02:03.413Z 852 TID-ouxqapj80 GitlabShellWorker JID-4f6fba0fde5e052c1fd23cff INFO: start
+2018-04-02_08:02:03.42814 2018-04-02T08:02:03.427Z 852 TID-ouxqarymo ActionMailer::DeliveryJob JID-c0b0f86e0851d0c7c1263edd INFO: start
+2018-04-02_08:02:03.49792 sh: 1: /usr/sbin/sendmail: not found
+2018-04-02_08:02:03.51574 2018-04-02T08:02:03.515Z 852 TID-ouxqarymo ActionMailer::DeliveryJob JID-c0b0f86e0851d0c7c1263edd INFO: done: 0.088 sec
+2018-04-02_08:02:03.54717 2018-04-02T08:02:03.546Z 852 TID-ouxqapj80 GitlabShellWorker JID-4f6fba0fde5e052c1fd23cff INFO: done: 0.133 sec
+2018-04-02_08:02:49.42234 2018-04-02T08:02:49.421Z 852 TID-ouxqarwto GitlabShellWorker JID-d2665eb2cbf09ad45c1b27b4 INFO: start
+2018-04-02_08:02:49.43004 2018-04-02T08:02:49.429Z 852 TID-ouxqaryec GitlabShellWorker JID-0d73a07c2fe03a277da5859a INFO: start
+2018-04-02_08:02:49.52482 2018-04-02T08:02:49.524Z 852 TID-ouxqarwto GitlabShellWorker JID-d2665eb2cbf09ad45c1b27b4 INFO: done: 0.102 sec
+2018-04-02_08:02:49.52603 2018-04-02T08:02:49.525Z 852 TID-ouxqaryec GitlabShellWorker JID-0d73a07c2fe03a277da5859a INFO: done: 0.096 sec
+2018-04-02_08:15:06.58983 2018-04-02T08:15:06.589Z 852 TID-ouxqapje4 StuckImportJobsWorker JID-4eb62b5529959a60513f6899 INFO: start
+2018-04-02_08:15:06.62692 2018-04-02T08:15:06.626Z 852 TID-ouxqapje4 StuckImportJobsWorker JID-4eb62b5529959a60513f6899 INFO: done: 0.037 sec
+2018-04-02_08:19:30.47252 2018-04-02T08:19:30.472Z 852 TID-ouxqary38 PipelineScheduleWorker JID-c6d2b45af8fa6fb8bd6a5040 INFO: start
+2018-04-02_08:19:30.49058 2018-04-02T08:19:30.490Z 852 TID-ouxqary38 PipelineScheduleWorker JID-c6d2b45af8fa6fb8bd6a5040 INFO: done: 0.018 sec
+2018-04-02_08:20:01.47767 2018-04-02T08:20:01.477Z 852 TID-ouxqapl6k RepositoryCheck::BatchWorker JID-d46d31c2e59b23776cd60e14 INFO: start
+2018-04-02_08:20:01.53123 2018-04-02T08:20:01.530Z 852 TID-ouxqapl6k RepositoryCheck::BatchWorker JID-d46d31c2e59b23776cd60e14 INFO: done: 0.053 sec
+2018-04-02_08:50:15.61604 2018-04-02T08:50:15.615Z 852 TID-ouxqapje4 ExpireBuildArtifactsWorker JID-1c13528c113f54c5161b7645 INFO: start
+2018-04-02_08:50:15.72814 2018-04-02T08:50:15.727Z 852 TID-ouxqapje4 ExpireBuildArtifactsWorker JID-1c13528c113f54c5161b7645 INFO: done: 0.112 sec
+2018-04-02_08:52:26.38746 2018-04-02T08:52:26.386Z 852 TID-ouxqapkw0 PostReceive JID-4fc2f7578e5999b3c61a4024 INFO: start
+2018-04-02_08:52:26.62541 2018-04-02T08:52:26.625Z 852 TID-ouxqapitk UpdateMergeRequestsWorker JID-67c9ef0ac5789f05e1d23301 INFO: start
+2018-04-02_08:52:26.88361 2018-04-02T08:52:26.883Z 852 TID-ouxqapitk UpdateMergeRequestsWorker JID-67c9ef0ac5789f05e1d23301 INFO: done: 0.258 sec
+2018-04-02_08:52:27.06527 2018-04-02T08:52:27.064Z 852 TID-ouxqapjt4 SystemHookPushWorker JID-1197cf03338769f3b8344ee8 INFO: start
+2018-04-02_08:52:27.07958 2018-04-02T08:52:27.079Z 852 TID-ouxqapl6k WebHookWorker JID-8bfde9f3f8f41a578b98fa50 INFO: start
+2018-04-02_08:52:27.10024 2018-04-02T08:52:27.099Z 852 TID-ouxqapjt4 SystemHookPushWorker JID-1197cf03338769f3b8344ee8 INFO: done: 0.035 sec
+2018-04-02_08:52:27.12684 2018-04-02T08:52:27.126Z 852 TID-ouxqapk0c ProjectCacheWorker JID-5fcf77e42750083c5f413b60 INFO: start
+2018-04-02_08:52:27.23673 2018-04-02T08:52:27.235Z 852 TID-ouxqapkw0 PostReceive JID-4fc2f7578e5999b3c61a4024 INFO: done: 0.848 sec
+2018-04-02_08:52:27.47227 2018-04-02T08:52:27.472Z 852 TID-ouxqapl6k WebHookWorker JID-8bfde9f3f8f41a578b98fa50 INFO: done: 0.393 sec
+2018-04-02_08:52:36.64665 2018-04-02T08:52:36.645Z 852 TID-ouxqapk0c ProjectCacheWorker JID-5fcf77e42750083c5f413b60 INFO: done: 9.516 sec
+2018-04-02_09:00:39.46822 2018-04-02T09:00:39.466Z 852 TID-ouxqarxno ImportExportProjectCleanupWorker JID-22940b6fcc2a8d737f7148d7 INFO: start
+2018-04-02_09:00:39.57097 2018-04-02T09:00:39.570Z 852 TID-ouxqarxno ImportExportProjectCleanupWorker JID-22940b6fcc2a8d737f7148d7 INFO: done: 0.104 sec
+2018-04-02_09:00:39.57429 2018-04-02T09:00:39.574Z 852 TID-ouxqarpeg RepositoryArchiveCacheWorker JID-08be02a70210d32335165120 INFO: start
+2018-04-02_09:00:39.61039 2018-04-02T09:00:39.609Z 852 TID-ouxqarpeg RepositoryArchiveCacheWorker JID-08be02a70210d32335165120 INFO: done: 0.035 sec
+2018-04-02_09:00:39.61843 2018-04-02T09:00:39.617Z 852 TID-ouxqary38 StuckCiJobsWorker JID-158334acc41fb95e4f9b3201 INFO: start
+2018-04-02_09:00:39.83948 2018-04-02T09:00:39.838Z 852 TID-ouxqary38 StuckCiJobsWorker JID-158334acc41fb95e4f9b3201 INFO: done: 0.221 sec
+2018-04-02_09:15:18.08571 2018-04-02T09:15:18.084Z 852 TID-ouxqapj1c StuckImportJobsWorker JID-6f3b6adc5030100e1d0c2c38 INFO: start
+2018-04-02_09:15:18.26426 2018-04-02T09:15:18.264Z 852 TID-ouxqapj1c StuckImportJobsWorker JID-6f3b6adc5030100e1d0c2c38 INFO: done: 0.179 sec
+2018-04-02_09:16:56.03699 2018-04-02T09:16:56.036Z 852 TID-ouxqapje4 PostReceive JID-5d79371935cb00dca548e66b INFO: start
+2018-04-02_09:16:56.36229 2018-04-02T09:16:56.362Z 852 TID-ouxqarxvg UpdateMergeRequestsWorker JID-8b81e38fd663688a45f40119 INFO: start
+2018-04-02_09:16:56.76057 2018-04-02T09:16:56.760Z 852 TID-ouxqarxvg UpdateMergeRequestsWorker JID-8b81e38fd663688a45f40119 INFO: done: 0.398 sec
+2018-04-02_09:16:56.91019 2018-04-02T09:16:56.909Z 852 TID-ouxqarx7k SystemHookPushWorker JID-33a8d7ec20c8f319949f3ea2 INFO: start
+2018-04-02_09:16:56.93764 2018-04-02T09:16:56.937Z 852 TID-ouxqapi6s WebHookWorker JID-e816be6d4ee9d72611c9d765 INFO: start
+2018-04-02_09:16:56.94345 2018-04-02T09:16:56.942Z 852 TID-ouxqarx7k SystemHookPushWorker JID-33a8d7ec20c8f319949f3ea2 INFO: done: 0.033 sec
+2018-04-02_09:16:56.99415 2018-04-02T09:16:56.993Z 852 TID-ouxqapj1c ProjectCacheWorker JID-e2a2c599608eeaec623c4017 INFO: start
+2018-04-02_09:16:57.06535 2018-04-02T09:16:57.065Z 852 TID-ouxqapje4 PostReceive JID-5d79371935cb00dca548e66b INFO: done: 1.028 sec
+2018-04-02_09:16:57.33493 2018-04-02T09:16:57.333Z 852 TID-ouxqapj1c ProjectCacheWorker JID-e2a2c599608eeaec623c4017 INFO: done: 0.339 sec
+2018-04-02_09:16:59.71253 2018-04-02T09:16:59.712Z 852 TID-ouxqapi6s WebHookWorker JID-e816be6d4ee9d72611c9d765 INFO: done: 2.775 sec
+2018-04-02_09:19:10.87274 2018-04-02T09:19:10.872Z 852 TID-ouxqapjlw PipelineScheduleWorker JID-c80b8e62fa53044095e41b23 INFO: start
+2018-04-02_09:19:10.97181 2018-04-02T09:19:10.971Z 852 TID-ouxqapjlw PipelineScheduleWorker JID-c80b8e62fa53044095e41b23 INFO: done: 0.099 sec
+2018-04-02_09:20:16.19670 2018-04-02T09:20:16.196Z 852 TID-ouxqarwto RepositoryCheck::BatchWorker JID-85986eadb5e5ca2baf54c40e INFO: start
+2018-04-02_09:20:16.26338 2018-04-02T09:20:16.263Z 852 TID-ouxqarwto RepositoryCheck::BatchWorker JID-85986eadb5e5ca2baf54c40e INFO: done: 0.067 sec

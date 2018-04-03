@@ -1,0 +1,27 @@
+{
+  "manifest": {
+    "name": "babel-plugin-jest-hoist",
+    "version": "22.4.3",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest.git"
+    },
+    "license": "MIT",
+    "main": "build/index.js",
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-babel-plugin-jest-hoist-22.4.3-7d8bcccadc2667f96a0dcc6afe1891875ee6c14a/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# babel-plugin-jest-hoist\n\nBabel plugin to hoist `jest.disableAutomock`, `jest.enableAutomock`,\n`jest.unmock`, `jest.mock`, calls above `import` statements. This plugin is\nautomatically included when using\n[babel-jest](https://github.com/facebook/jest/tree/master/packages/babel-jest).\n\n## Installation\n\n```sh\n$ yarn add --dev babel-plugin-jest-hoist\n```\n\n## Usage\n\n### Via `.babelrc` (Recommended)\n\n**.babelrc**\n\n```json\n{\n  \"plugins\": [\"jest-hoist\"]\n}\n```\n\n### Via CLI\n\n```sh\n$ babel --plugins jest-hoist script.js\n```\n\n### Via Node API\n\n```javascript\nrequire('babel-core').transform('code', {\n  plugins: ['jest-hoist'],\n});\n```\n",
+    "description": "Babel plugin to hoist `jest.disableAutomock`, `jest.enableAutomock`, `jest.unmock`, `jest.mock`, calls above `import` statements. This plugin is automatically included when using [babel-jest](https://github.com/facebook/jest/tree/master/packages/babel-jest)."
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-22.4.3.tgz#7d8bcccadc2667f96a0dcc6afe1891875ee6c14a",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-22.4.3.tgz",
+    "hash": "7d8bcccadc2667f96a0dcc6afe1891875ee6c14a",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "7d8bcccadc2667f96a0dcc6afe1891875ee6c14a"
+}

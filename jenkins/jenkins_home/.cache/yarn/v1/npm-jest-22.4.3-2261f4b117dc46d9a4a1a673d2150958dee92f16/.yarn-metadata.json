@@ -1,0 +1,64 @@
+{
+  "manifest": {
+    "name": "jest",
+    "description": "Delightful JavaScript Testing.",
+    "version": "22.4.3",
+    "main": "build/jest.js",
+    "dependencies": {
+      "import-local": "^1.0.0",
+      "jest-cli": "^22.4.3"
+    },
+    "bin": {
+      "jest": "./bin/jest.js"
+    },
+    "engines": {
+      "node": ">= 6"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest"
+    },
+    "homepage": "http://facebook.github.io/jest/",
+    "license": "MIT",
+    "keywords": [
+      "ava",
+      "babel",
+      "coverage",
+      "easy",
+      "expect",
+      "facebook",
+      "immersive",
+      "instant",
+      "jasmine",
+      "jest",
+      "jsdom",
+      "mocha",
+      "mocking",
+      "painless",
+      "qunit",
+      "runner",
+      "sandboxed",
+      "snapshot",
+      "tap",
+      "tape",
+      "test",
+      "testing",
+      "typescript",
+      "watch"
+    ],
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-jest-22.4.3-2261f4b117dc46d9a4a1a673d2150958dee92f16/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# Jest\n\n🃏 Delightful JavaScript Testing\n\n* **👩🏻‍💻 Easy Setup**: Jest is a complete and easy to set up JavaScript testing\n  solution. In fact, Jest works out of the box for any React project.\n\n* **🏃🏽 Instant Feedback**: Failed tests run first. Fast interactive mode can\n  switch between running all tests or only test files related to changed files.\n\n* **📸 Snapshot Testing**: Jest can\n  [capture snapshots](http://facebook.github.io/jest/docs/snapshot-testing.html)\n  of React trees or other serializable values to simplify UI testing.\n\nRead More: http://facebook.github.io/jest/\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/jest/-/jest-22.4.3.tgz#2261f4b117dc46d9a4a1a673d2150958dee92f16",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/jest/-/jest-22.4.3.tgz",
+    "hash": "2261f4b117dc46d9a4a1a673d2150958dee92f16",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "2261f4b117dc46d9a4a1a673d2150958dee92f16"
+}

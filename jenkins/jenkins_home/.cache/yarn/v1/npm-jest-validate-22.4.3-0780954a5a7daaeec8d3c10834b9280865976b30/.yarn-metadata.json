@@ -1,0 +1,34 @@
+{
+  "manifest": {
+    "name": "jest-validate",
+    "version": "22.4.3",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest.git"
+    },
+    "license": "MIT",
+    "main": "build/index.js",
+    "dependencies": {
+      "chalk": "^2.0.1",
+      "jest-config": "^22.4.3",
+      "jest-get-type": "^22.4.3",
+      "leven": "^2.1.0",
+      "pretty-format": "^22.4.3"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-jest-validate-22.4.3-0780954a5a7daaeec8d3c10834b9280865976b30/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# jest-validate\n\nGeneric configuration validation tool that helps you with warnings, errors and\ndeprecation messages as well as showing users examples of correct configuration.\n\n```bash\nnpm install --save jest-validate\n```\n\n## Usage\n\n```js\nimport {validate} from 'jest-validate';\n\nvalidate((config: Object), (options: ValidationOptions)); // => {hasDeprecationWarnings: boolean, isValid: boolean}\n```\n\nWhere `ValidationOptions` are:\n\n```js\ntype ValidationOptions = {\n  comment?: string,\n  condition?: (option: any, validOption: any) => boolean,\n  deprecate?: (\n    config: Object,\n    option: string,\n    deprecatedOptions: Object,\n    options: ValidationOptions,\n  ) => true,\n  deprecatedConfig?: {[key: string]: Function},\n  error?: (\n    option: string,\n    received: any,\n    defaultValue: any,\n    options: ValidationOptions,\n  ) => void,\n  exampleConfig: Object,\n  title?: Title,\n  unknown?: (\n    config: Object,\n    exampleConfig: Object,\n    option: string,\n    options: ValidationOptions,\n  ) => void,\n};\n\ntype Title = {|\n  deprecation?: string,\n  error?: string,\n  warning?: string,\n|};\n```\n\n`exampleConfig` is the only option required.\n\n## API\n\nBy default `jest-validate` will print generic warning and error messages. You\ncan however customize this behavior by providing `options: ValidationOptions`\nobject as a second argument:\n\nAlmost anything can be overwritten to suite your needs.\n\n### Options\n\n* `comment` – optional string to be rendered below error/warning message.\n* `condition` – an optional function with validation condition.\n* `deprecate`, `error`, `unknown` – optional functions responsible for\n  displaying warning and error messages.\n* `deprecatedConfig` – optional object with deprecated config keys.\n* `exampleConfig` – the only **required** option with configuration against\n  which you'd like to test.\n* `title` – optional object of titles for errors and messages.\n\nYou will find examples of `condition`, `deprecate`, `error`, `unknown`, and\n`deprecatedConfig` inside source of this repository, named respectively.\n\n## Examples\n\nMinimal example:\n\n```js\nvalidate(config, {exampleConfig});\n```\n\nExample with slight modifications:\n\n```js\nvalidate(config, {\n  comment: '  Documentation: http://custom-docs.com',\n  deprecatedConfig,\n  exampleConfig,\n  title: {\n    deprecation: 'Custom Deprecation',\n    // leaving 'error' and 'warning' as default\n  },\n});\n```\n\nThis will output:\n\n#### Warning:\n\n```bash\n● Validation Warning:\n\n  Unknown option transformx with value \"<rootDir>/node_modules/babel-jest\" was found.\n  This is either a typing error or a user mistake. Fixing it will remove this message.\n\n  Documentation: http://custom-docs.com\n```\n\n#### Error:\n\n```bash\n● Validation Error:\n\n  Option transform must be of type:\n    object\n  but instead received:\n    string\n\n  Example:\n  {\n    \"transform\": {\"^.+\\\\.js$\": \"<rootDir>/preprocessor.js\"}\n  }\n\n  Documentation: http://custom-docs.com\n```\n\n#### Deprecation\n\nBased on `deprecatedConfig` object with proper deprecation messages. Note custom\ntitle:\n\n```bash\nCustom Deprecation:\n\n  Option scriptPreprocessor was replaced by transform, which support multiple preprocessors.\n\n  Jest now treats your current configuration as:\n  {\n    \"transform\": {\".*\": \"xxx\"}\n  }\n\n  Please update your configuration.\n\n  Documentation: http://custom-docs.com\n```\n",
+    "description": "Generic configuration validation tool that helps you with warnings, errors and deprecation messages as well as showing users examples of correct configuration."
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/jest-validate/-/jest-validate-22.4.3.tgz#0780954a5a7daaeec8d3c10834b9280865976b30",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/jest-validate/-/jest-validate-22.4.3.tgz",
+    "hash": "0780954a5a7daaeec8d3c10834b9280865976b30",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "0780954a5a7daaeec8d3c10834b9280865976b30"
+}

@@ -1,0 +1,66 @@
+{
+  "manifest": {
+    "name": "abab",
+    "version": "1.0.4",
+    "description": "WHATWG spec-compliant implementations of window.atob and window.btoa.",
+    "main": "index.js",
+    "files": [
+      "index.js",
+      "lib/"
+    ],
+    "scripts": {
+      "mocha": "mocha test/node",
+      "karma": "karma start",
+      "test": "npm run lint && npm run mocha && npm run karma",
+      "lint": "jscs . && eslint ."
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/jsdom/abab.git"
+    },
+    "keywords": [
+      "atob",
+      "btoa",
+      "browser"
+    ],
+    "author": {
+      "name": "Jeff Carpenter",
+      "email": "gcarpenterv@gmail.com"
+    },
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/jsdom/abab/issues"
+    },
+    "homepage": "https://github.com/jsdom/abab#readme",
+    "devDependencies": {
+      "babel-core": "^6.1.4",
+      "babel-loader": "^6.1.0",
+      "babel-preset-es2015": "^6.1.4",
+      "eslint": "^1.3.1",
+      "jscs": "^2.1.1",
+      "karma": "^0.13.10",
+      "karma-cli": "^0.1.1",
+      "karma-firefox-launcher": "^0.1.6",
+      "karma-mocha": "^0.2.0",
+      "karma-sauce-launcher": "^0.2.14",
+      "karma-webpack": "^1.7.0",
+      "mocha": "^2.2.5",
+      "webpack": "^1.12.2"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-abab-1.0.4-5faad9c2c07f60dd76770f71cf025b62a63cfd4e/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# abab\n\n[![npm version](https://badge.fury.io/js/abab.svg)](https://www.npmjs.com/package/abab) [![Build Status](https://travis-ci.org/jsdom/abab.svg?branch=master)](https://travis-ci.org/jsdom/abab)\n\nA module that implements `window.atob` and `window.btoa` according to the [WHATWG spec](https://html.spec.whatwg.org/multipage/webappapis.html#atob). The code is originally from [w3c/web-platform-tests](https://github.com/w3c/web-platform-tests/blob/master/html/webappapis/atob/base64.html).\n\nCompatibility: Node.js version 3+ and all major browsers (using browserify or webpack)\n\nInstall with `npm`:\n\n```sh\nnpm install abab\n```\n\n## API\n\n### `btoa` (base64 encode)\n\n```js\nconst btoa = require('abab').btoa;\nbtoa('Hello, world!'); // 'SGVsbG8sIHdvcmxkIQ=='\n```\n\n### `atob` (base64 decode)\n\n```js \nconst atob = require('abab').atob;\natob('SGVsbG8sIHdvcmxkIQ=='); // 'Hello, world!'\n```\n\n#### Valid characters\n\n[Per the spec](https://html.spec.whatwg.org/multipage/webappapis.html#atob:dom-windowbase64-btoa-3), `btoa` will accept strings \"containing only characters in the range `U+0000` to `U+00FF`.\" If passed a string with characters above `U+00FF`, `btoa` will return `null`. If `atob` is passed a string that is not base64-valid, it will also return `null`. In both cases when `null` is returned, the spec calls for throwing a `DOMException` of type `InvalidCharacterError`.\n\n## Browsers\n\nIf you want to include just one of the methods to save bytes in your client-side code, you can `require` the desired module directly.\n\n```js\nvar atob = require('abab/lib/atob');\nvar btoa = require('abab/lib/btoa');\n```\n\n-----\n\n### Checklists\n\nIf you're **submitting a PR** or **deploying to npm**, please use the [checklists in CONTRIBUTING.md](https://github.com/jsdom/abab/blob/master/CONTRIBUTING.md#checklists)\n\n### Remembering `atob` vs. `btoa`\n\nHere's a mnemonic that might be useful: if you have a plain string and want to base64 encode it, then decode it, `btoa` is what you run before (**b**efore - **b**toa), and `atob` is what you run after (**a**fter - **a**tob).\n",
+    "licenseText": "Both the original source code and new contributions in this repository are released under the [W3C 3-clause BSD license](https://github.com/w3c/web-platform-tests/blob/master/LICENSE.md#w3c-3-clause-bsd-license).\n\n# W3C 3-clause BSD License\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n*    Redistributions of works must retain the original copyright notice, this list of conditions and the following disclaimer.\n*    Redistributions in binary form must reproduce the original copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n*    Neither the name of the W3C nor the names of its contributors may be used to endorse or promote products derived from this work without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz",
+    "hash": "5faad9c2c07f60dd76770f71cf025b62a63cfd4e",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
+}

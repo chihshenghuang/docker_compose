@@ -1,0 +1,31 @@
+{
+  "manifest": {
+    "name": "babel-preset-jest",
+    "version": "22.4.3",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest.git"
+    },
+    "license": "MIT",
+    "main": "index.js",
+    "dependencies": {
+      "babel-plugin-jest-hoist": "^22.4.3",
+      "babel-plugin-syntax-object-rest-spread": "^6.13.0"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-babel-preset-jest-22.4.3-e92eef9813b7026ab4ca675799f37419b5a44156/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# babel-preset-jest\n\n> Babel preset for all Jest plugins. This preset is automatically included when\n> using\n> [babel-jest](https://github.com/facebook/jest/tree/master/packages/babel-jest).\n\n## Install\n\n```sh\n$ npm install --save-dev babel-preset-jest\n```\n\n## Usage\n\n### Via `.babelrc` (Recommended)\n\n**.babelrc**\n\n```json\n{\n  \"presets\": [\"jest\"]\n}\n```\n\n### Via CLI\n\n```sh\n$ babel script.js --presets jest\n```\n\n### Via Node API\n\n```javascript\nrequire('babel-core').transform('code', {\n  presets: ['jest'],\n});\n```\n",
+    "description": "> Babel preset for all Jest plugins. This preset is automatically included when > using > [babel-jest](https://github.com/facebook/jest/tree/master/packages/babel-jest)."
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-22.4.3.tgz#e92eef9813b7026ab4ca675799f37419b5a44156",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-22.4.3.tgz",
+    "hash": "e92eef9813b7026ab4ca675799f37419b5a44156",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "e92eef9813b7026ab4ca675799f37419b5a44156"
+}

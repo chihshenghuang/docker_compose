@@ -1,0 +1,53 @@
+{
+  "manifest": {
+    "name": "left-pad",
+    "version": "1.2.0",
+    "description": "String left pad",
+    "main": "index.js",
+    "types": "index.d.ts",
+    "scripts": {
+      "test": "node test",
+      "bench": "node perf/perf.js"
+    },
+    "devDependencies": {
+      "benchmark": "^2.1.0",
+      "tape": "*"
+    },
+    "keywords": [
+      "leftpad",
+      "left",
+      "pad",
+      "padding",
+      "string",
+      "repeat"
+    ],
+    "repository": {
+      "url": "git@github.com:stevemao/left-pad.git",
+      "type": "git"
+    },
+    "author": {
+      "name": "azer"
+    },
+    "maintainers": [
+      {
+        "name": "Cameron Westland",
+        "email": "camwest@gmail.com"
+      }
+    ],
+    "license": "WTFPL",
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-left-pad-1.2.0-d30a73c6b8201d8f7d8e7956ba9616087a68e0ee/package.json",
+    "readmeFilename": "README.md",
+    "readme": "## left-pad\n\nString left pad\n\n[![Build Status][travis-image]][travis-url]\n\n## Install\n\n```bash\n$ npm install left-pad\n```\n\n## Usage\n\n```js\nconst leftPad = require('left-pad')\n\nleftPad('foo', 5)\n// => \"  foo\"\n\nleftPad('foobar', 6)\n// => \"foobar\"\n\nleftPad(1, 2, '0')\n// => \"01\"\n\nleftPad(17, 5, 0)\n// => \"00017\"\n```\n\n**NOTE:** The third argument should be a single `char`. However the module doesn't throw an error if you supply more than one `char`s. See [#28](https://github.com/stevemao/left-pad/pull/28).\n\n[travis-image]: https://travis-ci.org/stevemao/left-pad.svg?branch=master\n[travis-url]: https://travis-ci.org/stevemao/left-pad\n\n## Typings\n\nTypings copied from [@types/left-pad](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/left-pad) for convenience.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/left-pad/-/left-pad-1.2.0.tgz#d30a73c6b8201d8f7d8e7956ba9616087a68e0ee",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/left-pad/-/left-pad-1.2.0.tgz",
+    "hash": "d30a73c6b8201d8f7d8e7956ba9616087a68e0ee",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "d30a73c6b8201d8f7d8e7956ba9616087a68e0ee"
+}

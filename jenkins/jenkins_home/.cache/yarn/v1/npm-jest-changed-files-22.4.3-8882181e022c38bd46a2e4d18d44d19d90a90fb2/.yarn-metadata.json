@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "name": "jest-changed-files",
+    "version": "22.4.3",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest.git"
+    },
+    "license": "MIT",
+    "main": "build/index.js",
+    "dependencies": {
+      "throat": "^4.0.0"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-jest-changed-files-22.4.3-8882181e022c38bd46a2e4d18d44d19d90a90fb2/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# jest-changed-files\n\nA module used internally by Jest to check which files have changed since you\nlast committed in git or hg.\n\n## Install\n\n```sh\n$ npm install --save jest-changed-files\n```\n\n## API\n\n### `getChangedFilesForRoots(roots: <Array<string>>, options: ?object): Promise<?object>`\n\nGet the list of files and repos that have changed since the last commit.\n\n#### Parameters\n\nroots: Array of string paths gathered from\n[jest roots](https://facebook.github.io/jest/docs/configuration.html#roots-array-string).\n\noptions: Object literal with keys\n\n* lastCommit: boolean\n* withAncestor: boolean\n\n### findRepos(roots: <Array<string>>): Promise<?object>\n\nGet a set of git and hg repositories.\n\n#### Parameters\n\nroots: Array of string paths gathered from\n[jest roots](https://facebook.github.io/jest/docs/configuration.html#roots-array-string).\n\n## Usage\n\n```javascript\nimport {getChangedFilesForRoots} from 'jest-changed-files';\n\ngetChangedFilesForRoots(['/path/to/test'], {\n  lastCommit: true,\n  withAncestor: true,\n}).then(files => {\n  /*\n  {\n    repos: [],\n    changedFiles: []\n  }\n  */\n});\n```\n\n```javascript\nimport {findRepos} from 'jest-changed-files';\n\nfindRepos(['/path/to/test']).then(repos => {\n  /*\n  {\n    git: Set<Path>,\n    hg: Set<Path>\n  }\n  */\n});\n```\n",
+    "description": "A module used internally by Jest to check which files have changed since you last committed in git or hg."
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-22.4.3.tgz#8882181e022c38bd46a2e4d18d44d19d90a90fb2",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-22.4.3.tgz",
+    "hash": "8882181e022c38bd46a2e4d18d44d19d90a90fb2",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "8882181e022c38bd46a2e4d18d44d19d90a90fb2"
+}

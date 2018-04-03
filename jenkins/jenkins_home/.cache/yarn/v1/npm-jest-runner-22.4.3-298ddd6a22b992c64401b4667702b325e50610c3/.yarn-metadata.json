@@ -1,0 +1,37 @@
+{
+  "manifest": {
+    "name": "jest-runner",
+    "version": "22.4.3",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest.git"
+    },
+    "license": "MIT",
+    "main": "build/index.js",
+    "dependencies": {
+      "exit": "^0.1.2",
+      "jest-config": "^22.4.3",
+      "jest-docblock": "^22.4.3",
+      "jest-haste-map": "^22.4.3",
+      "jest-jasmine2": "^22.4.3",
+      "jest-leak-detector": "^22.4.3",
+      "jest-message-util": "^22.4.3",
+      "jest-runtime": "^22.4.3",
+      "jest-util": "^22.4.3",
+      "jest-worker": "^22.4.3",
+      "throat": "^4.0.0"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-jest-runner-22.4.3-298ddd6a22b992c64401b4667702b325e50610c3/package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/jest-runner/-/jest-runner-22.4.3.tgz#298ddd6a22b992c64401b4667702b325e50610c3",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/jest-runner/-/jest-runner-22.4.3.tgz",
+    "hash": "298ddd6a22b992c64401b4667702b325e50610c3",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "298ddd6a22b992c64401b4667702b325e50610c3"
+}

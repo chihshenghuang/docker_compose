@@ -1,0 +1,31 @@
+{
+  "manifest": {
+    "name": "jest-message-util",
+    "version": "22.4.3",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest.git"
+    },
+    "license": "MIT",
+    "main": "build/index.js",
+    "dependencies": {
+      "@babel/code-frame": "^7.0.0-beta.35",
+      "chalk": "^2.0.1",
+      "micromatch": "^2.3.11",
+      "slash": "^1.0.0",
+      "stack-utils": "^1.0.1"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-jest-message-util-22.4.3-cf3d38aafe4befddbfc455e57d65d5239e399eb7/package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-22.4.3.tgz#cf3d38aafe4befddbfc455e57d65d5239e399eb7",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-22.4.3.tgz",
+    "hash": "cf3d38aafe4befddbfc455e57d65d5239e399eb7",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "cf3d38aafe4befddbfc455e57d65d5239e399eb7"
+}

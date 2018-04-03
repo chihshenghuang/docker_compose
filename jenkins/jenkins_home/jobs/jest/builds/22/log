@@ -1,0 +1,58 @@
+Started by GitLab push by Chih Sheng Huang
+Obtained Jenkinsfile from git http://gitlab/samuel/jenkins-jest.git
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4MlJwFC5Cv0oXh+nF1BcGMJjcnlxsCtd1loYtQvUWpYiAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/workspace/jest
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Initialize)
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] tool
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[jest] Running shell script
++ pwd
+/var/jenkins_home/workspace/jest
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[jest] Running shell script
++ yarn -v
+1.5.1
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://gitlab/samuel/jenkins-jest.git # timeout=10
+Fetching upstream changes from http://gitlab/samuel/jenkins-jest.git
+ > git --version # timeout=10
+ > git fetch --tags --progress http://gitlab/samuel/jenkins-jest.git +refs/heads/*:refs/remotes/origin/*
+skipping resolution of commit 2dac20927f3294940500550279a9d0114376a27d, since it originates from another repository
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 2dac20927f3294940500550279a9d0114376a27d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2dac20927f3294940500550279a9d0114376a27d
+Commit message: "modify jenkinsfile"
+ > git rev-list --no-walk a2e65a1227a763fb52ddf544a3e19ecec1cef282 # timeout=10
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[jest] Running shell script
++ pwd
+/var/jenkins_home/workspace/jest
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[jest] Running shell script
++ yarn install
+yarn install v1.5.1
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+info There appears to be trouble with your network connection. Retrying...
+info There appears to be trouble with your network connection. Retrying...
+info fsevents@1.1.3: The platform "linux" is incompatible with this module.
+info "fsevents@1.1.3" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+Done in 413.87s.
+Aborted by [8mha:////4Chtbzqx1FE6WyuGgKzKVPtGPfBAUupkYVHynPP60SIWAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Sending interrupt signal to process
+After 10s process did not stop
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4Isb0Fu0TJnAleEBzZ4POty0QK5Cj0GTKkm7a2e4YjOZAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+Finished: ABORTED

@@ -1,0 +1,25 @@
+2018-04-03_01:43:39.68970 LOG:  database system was interrupted; last known up at 2018-04-02 09:43:52 GMT
+2018-04-03_01:43:40.75283 FATAL:  the database system is starting up
+2018-04-03_01:43:40.88141 FATAL:  the database system is starting up
+2018-04-03_01:43:40.94044 FATAL:  the database system is starting up
+2018-04-03_01:43:43.01916 FATAL:  the database system is starting up
+2018-04-03_01:43:43.06304 FATAL:  the database system is starting up
+2018-04-03_01:43:44.85022 LOG:  database system was not properly shut down; automatic recovery in progress
+2018-04-03_01:43:44.93384 LOG:  redo starts at 0/3E000098
+2018-04-03_01:43:44.93618 LOG:  unexpected pageaddr 0/2F000000 in log segment 00000001000000000000003F, offset 0
+2018-04-03_01:43:44.93655 LOG:  redo done at 0/3E000098
+2018-04-03_01:43:45.10176 FATAL:  the database system is starting up
+2018-04-03_01:43:45.13043 FATAL:  the database system is starting up
+2018-04-03_01:43:45.17148 LOG:  MultiXact member wraparound protections are now enabled
+2018-04-03_01:43:45.17721 LOG:  database system is ready to accept connections
+2018-04-03_01:43:45.17798 LOG:  autovacuum launcher started
+2018-04-03_03:25:12.33015 received TERM from runit, sending INT instead to force quit connections
+2018-04-03_03:25:12.33208 LOG:  received fast shutdown request
+2018-04-03_03:25:12.33264 LOG:  aborting any active transactions
+2018-04-03_03:25:12.33318 FATAL:  terminating connection due to administrator command
+2018-04-03_03:25:12.33369 FATAL:  terminating connection due to administrator command
+2018-04-03_03:25:12.33412 FATAL:  terminating connection due to administrator command
+2018-04-03_03:25:12.33473 FATAL:  terminating connection due to administrator command
+2018-04-03_03:25:12.33517 LOG:  autovacuum launcher shutting down
+2018-04-03_03:25:12.52053 LOG:  shutting down
+2018-04-03_03:25:12.59986 LOG:  database system is shut down

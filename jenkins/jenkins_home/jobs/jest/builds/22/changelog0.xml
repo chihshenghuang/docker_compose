@@ -1,0 +1,11 @@
+commit 2dac20927f3294940500550279a9d0114376a27d
+tree 0acc1d0163234854b5654dc752c8642ca504b9fc
+parent a2e65a1227a763fb52ddf544a3e19ecec1cef282
+author samuelhuang <pedoe1989@gmail.com> 2018-04-03 12:51:09 +0800
+committer samuelhuang <pedoe1989@gmail.com> 2018-04-03 12:51:09 +0800
+
+    modify jenkinsfile
+
+
+
+:100644 100644 a5ba41e18c49d66e139e53332bd9fc261513567d 5078ab97cdcb1ea4b0e7b70d1889e5d09acab076 M	Jenkinsfile

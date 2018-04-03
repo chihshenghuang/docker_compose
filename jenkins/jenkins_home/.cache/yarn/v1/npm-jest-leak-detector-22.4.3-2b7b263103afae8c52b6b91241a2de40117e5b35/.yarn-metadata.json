@@ -1,0 +1,33 @@
+{
+  "manifest": {
+    "name": "jest-leak-detector",
+    "version": "22.4.3",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest.git"
+    },
+    "license": "MIT",
+    "main": "build/index.js",
+    "dependencies": {
+      "pretty-format": "^22.4.3"
+    },
+    "devDependencies": {
+      "weak": "^1.0.1"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-jest-leak-detector-22.4.3-2b7b263103afae8c52b6b91241a2de40117e5b35/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# jest-leak-detector\n\nModule for verifying whether an object has been garbage collected or not.\n\nInternally creates a weak reference to the object, and forces garbage collection\nto happen. If the reference is gone, it meant no one else was pointing to the\nobject.\n\n## Example\n\n```javascript\nlet reference = {};\n\nconst detector = new LeakDetector(reference);\n\n// Reference is held in memory.\nconsole.log(detector.isLeaked()); // true\n\n// We destroy the only reference to the object.\nreference = null;\n\n// Reference is gone.\nconsole.log(detector.isLeaked()); // false\n```\n",
+    "description": "Module for verifying whether an object has been garbage collected or not."
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/jest-leak-detector/-/jest-leak-detector-22.4.3.tgz#2b7b263103afae8c52b6b91241a2de40117e5b35",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/jest-leak-detector/-/jest-leak-detector-22.4.3.tgz",
+    "hash": "2b7b263103afae8c52b6b91241a2de40117e5b35",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "2b7b263103afae8c52b6b91241a2de40117e5b35"
+}

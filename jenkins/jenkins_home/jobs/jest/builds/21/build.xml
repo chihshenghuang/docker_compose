@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.17">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <com.dabsquared.gitlabjenkins.cause.GitLabWebHookCause plugin="gitlab-plugin@1.5.4">
+            <data>
+              <actionType>PUSH</actionType>
+              <sourceProjectId>3</sourceProjectId>
+              <targetProjectId>3</targetProjectId>
+              <branch>master</branch>
+              <sourceBranch>master</sourceBranch>
+              <userName>Chih Sheng Huang</userName>
+              <userEmail>pedoe19892@gmail.com</userEmail>
+              <sourceRepoHomepage>http://gitlab/samuel/jenkins-jest</sourceRepoHomepage>
+              <sourceRepoName>jenkins-jest</sourceRepoName>
+              <sourceNamespace>samuel</sourceNamespace>
+              <sourceRepoUrl>git@gitlab:samuel/jenkins-jest.git</sourceRepoUrl>
+              <sourceRepoSshUrl>git@gitlab:samuel/jenkins-jest.git</sourceRepoSshUrl>
+              <sourceRepoHttpUrl>http://gitlab/samuel/jenkins-jest.git</sourceRepoHttpUrl>
+              <mergeRequestTitle></mergeRequestTitle>
+              <mergeRequestDescription></mergeRequestDescription>
+              <mergeRequestState></mergeRequestState>
+              <mergedByUser></mergedByUser>
+              <mergeRequestAssignee></mergeRequestAssignee>
+              <targetBranch>master</targetBranch>
+              <targetRepoName></targetRepoName>
+              <targetNamespace></targetNamespace>
+              <targetRepoSshUrl></targetRepoSshUrl>
+              <targetRepoHttpUrl></targetRepoHttpUrl>
+              <triggeredByUser>Chih Sheng Huang</triggeredByUser>
+              <before>a0765053f402e4407846d2a617d8905047a18b02</before>
+              <after>a2e65a1227a763fb52ddf544a3e19ecec1cef282</after>
+              <lastCommit>a2e65a1227a763fb52ddf544a3e19ecec1cef282</lastCommit>
+              <targetProjectUrl>http://gitlab/samuel/jenkins-jest</targetProjectUrl>
+            </data>
+          </com.dabsquared.gitlabjenkins.cause.GitLabWebHookCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction/>
+    <hudson.plugins.git.RevisionParameterAction plugin="git@3.8.0">
+      <commit>a2e65a1227a763fb52ddf544a3e19ecec1cef282</commit>
+      <combineCommits>false</combineCommits>
+      <repoURL plugin="git-client@2.7.1">
+        <path>samuel/jenkins-jest.git</path>
+        <rawPath>samuel/jenkins-jest.git</rawPath>
+        <user>git</user>
+        <port>-1</port>
+        <host>gitlab</host>
+      </repoURL>
+    </hudson.plugins.git.RevisionParameterAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.45">
+      <env class="tree-map">
+        <entry>
+          <string>NODEJS_HOME</string>
+          <string>/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS</string>
+        </entry>
+        <entry>
+          <string>PATH</string>
+          <string>/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin</string>
+        </entry>
+      </env>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <hudson.plugins.git.util.BuildData plugin="git@3.8.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.1">
+              <sha1>a2e65a1227a763fb52ddf544a3e19ecec1cef282</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>21</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>http://gitlab/samuel/jenkins-jest.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.8.0">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/jenkins_home/workspace/jest</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.6">
+      <revisionStates>
+        <entry>
+          <string>git http://gitlab/samuel/jenkins-jest.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+  </actions>
+  <queueId>7</queueId>
+  <timestamp>1522730995796</timestamp>
+  <startTime>1522730995818</startTime>
+  <result>FAILURE</result>
+  <description>Started by GitLab push by Chih Sheng Huang</description>
+  <duration>9117</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+	stage(&apos;Initialize&apos;){
+		env.NODEJS_HOME = &quot;${tool &apos;NodeJS&apos;}&quot;
+		env.PATH = &quot;${env.NODEJS_HOME}/bin:${env.PATH}&quot;
+		sh &apos;pwd&apos;
+		sh &apos;yarn -v&apos;
+		checkout scm
+		sh &apos;cd jenkins-jest/&apos;
+		sh &apos;yarn install&apos;
+	}
+
+  stage(&apos;test&apos;){
+    echo &apos;Start test...&apos;
+    sh &apos;yarn test --coverage&apos;		
+  }
+}
+
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>244076103</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>118393684</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1600368615</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>165027445</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>190412043</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>16</iota>
+    <head>1:16</head>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.8.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>http://gitlab/samuel/jenkins-jest.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/jest</workspace>
+      <changelogFile>/var/jenkins_home/jobs/jest/builds/21/changelog0.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

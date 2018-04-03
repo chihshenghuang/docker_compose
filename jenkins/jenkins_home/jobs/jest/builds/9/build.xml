@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.17">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>12</queueId>
+  <timestamp>1522660694913</timestamp>
+  <startTime>1522660694921</startTime>
+  <result>FAILURE</result>
+  <duration>51</duration>
+  <keepLog>false</keepLog>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.scm.NullSCM"/>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/jest@script</workspace>
+      <changelogFile>/var/jenkins_home/jobs/jest/builds/9/changelog0.xml</changelogFile>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

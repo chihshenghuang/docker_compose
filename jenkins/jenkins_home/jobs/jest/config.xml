@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.17">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.2.7"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.2.7">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.4">
+      <gitLabConnection>my-gitlab</gitLabConnection>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty plugin="gitlab-logo@1.0.3">
+      <repositoryName>jenkins-jest-test</repositoryName>
+    </org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <com.dabsquared.gitlabjenkins.GitLabPushTrigger plugin="gitlab-plugin@1.5.4">
+          <spec></spec>
+          <triggerOnPush>true</triggerOnPush>
+          <triggerOnMergeRequest>true</triggerOnMergeRequest>
+          <triggerOnPipelineEvent>false</triggerOnPipelineEvent>
+          <triggerOnAcceptedMergeRequest>false</triggerOnAcceptedMergeRequest>
+          <triggerOnClosedMergeRequest>false</triggerOnClosedMergeRequest>
+          <triggerOnApprovedMergeRequest>true</triggerOnApprovedMergeRequest>
+          <triggerOpenMergeRequestOnPush>never</triggerOpenMergeRequestOnPush>
+          <triggerOnNoteRequest>true</triggerOnNoteRequest>
+          <noteRegex>Jenkins please retry a build</noteRegex>
+          <ciSkip>true</ciSkip>
+          <skipWorkInProgressMergeRequest>true</skipWorkInProgressMergeRequest>
+          <setBuildDescription>true</setBuildDescription>
+          <branchFilterType>All</branchFilterType>
+          <includeBranchesSpec></includeBranchesSpec>
+          <excludeBranchesSpec></excludeBranchesSpec>
+          <targetBranchRegex></targetBranchRegex>
+          <secretToken>{AQAAABAAAAAw5hogNFgcmDpCimnvPh3TgQS2IMtws1PVMwgjujIEoVEuG+072/bhDGdeCCPiKR6UGIYNigHna575y7cp/A4jYA==}</secretToken>
+        </com.dabsquared.gitlabjenkins.GitLabPushTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.45">
+    <scm class="hudson.plugins.git.GitSCM" plugin="git@3.8.0">
+      <configVersion>2</configVersion>
+      <userRemoteConfigs>
+        <hudson.plugins.git.UserRemoteConfig>
+          <url>http://gitlab/samuel/jenkins-jest.git</url>
+        </hudson.plugins.git.UserRemoteConfig>
+      </userRemoteConfigs>
+      <branches>
+        <hudson.plugins.git.BranchSpec>
+          <name>*/master</name>
+        </hudson.plugins.git.BranchSpec>
+      </branches>
+      <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+      <submoduleCfg class="list"/>
+      <extensions/>
+    </scm>
+    <scriptPath>Jenkinsfile</scriptPath>
+    <lightweight>true</lightweight>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

@@ -1,0 +1,3 @@
+[jest] Running shell script
++ npm install
+/var/jenkins_home/workspace/jest@tmp/durable-aeee53da/script.sh: 2: /var/jenkins_home/workspace/jest@tmp/durable-aeee53da/script.sh: npm: not found

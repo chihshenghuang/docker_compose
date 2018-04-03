@@ -1,0 +1,6 @@
+Unpacking https://nodejs.org/dist/v9.10.1/node-v9.10.1-linux-x64.tar.gz to /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS on Jenkins
+$ /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS/bin/npm install -g yarn
+/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS/bin/yarnpkg -> /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS/lib/node_modules/yarn/bin/yarn.js
+/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS/bin/yarn -> /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS/lib/node_modules/yarn/bin/yarn.js
++ yarn@1.5.1
+added 1 package in 6.979s

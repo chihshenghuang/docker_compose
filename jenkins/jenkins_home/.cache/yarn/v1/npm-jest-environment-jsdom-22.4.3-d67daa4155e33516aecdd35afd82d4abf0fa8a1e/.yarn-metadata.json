@@ -1,0 +1,29 @@
+{
+  "manifest": {
+    "name": "jest-environment-jsdom",
+    "version": "22.4.3",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest.git"
+    },
+    "license": "MIT",
+    "main": "build/index.js",
+    "dependencies": {
+      "jest-mock": "^22.4.3",
+      "jest-util": "^22.4.3",
+      "jsdom": "^11.5.1"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-jest-environment-jsdom-22.4.3-d67daa4155e33516aecdd35afd82d4abf0fa8a1e/package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-22.4.3.tgz#d67daa4155e33516aecdd35afd82d4abf0fa8a1e",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-22.4.3.tgz",
+    "hash": "d67daa4155e33516aecdd35afd82d4abf0fa8a1e",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "d67daa4155e33516aecdd35afd82d4abf0fa8a1e"
+}

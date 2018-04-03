@@ -1,0 +1,19 @@
+Cloning the remote Git repository
+Cloning repository http://gitlab/samuel/jenkins-jest.git
+ > git init /var/jenkins_home/workspace/jest # timeout=10
+Fetching upstream changes from http://gitlab/samuel/jenkins-jest.git
+ > git --version # timeout=10
+ > git fetch --tags --progress http://gitlab/samuel/jenkins-jest.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url http://gitlab/samuel/jenkins-jest.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://gitlab/samuel/jenkins-jest.git # timeout=10
+Fetching upstream changes from http://gitlab/samuel/jenkins-jest.git
+ > git fetch --tags --progress http://gitlab/samuel/jenkins-jest.git +refs/heads/*:refs/remotes/origin/*
+skipping resolution of commit a2e65a1227a763fb52ddf544a3e19ecec1cef282, since it originates from another repository
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a2e65a1227a763fb52ddf544a3e19ecec1cef282 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a2e65a1227a763fb52ddf544a3e19ecec1cef282
+Commit message: "modify jenkinsfile"
+First time build. Skipping changelog.

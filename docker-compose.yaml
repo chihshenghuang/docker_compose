@@ -1,0 +1,26 @@
+version: '3'
+services:
+  jenkins:
+    container_name: jenkins
+    image: jenkins/jenkins:latest
+    depends_on:
+      - gitlab
+    volumes:
+    - /Users/pedoe/Documents/FrontEnd/docker/gitlab_compose/jenkins/jenkins_home:/var/jenkins_home
+    ports:
+    - 8080:8080
+    - 50000:50000  
+  gitlab:
+    container_name: gitlab
+    image: gitlab/gitlab-ce:latest
+    volumes:
+    - /Users/pedoe/Documents/FrontEnd/docker/gitlab_compose/gitlab/config:/etc/gitlab
+    - /Users/pedoe/Documents/FrontEnd/docker/gitlab_compose/gitlab/logs:/var/log/gitlab
+    - /Users/pedoe/Documents/FrontEnd/docker/gitlab_compose/gitlab/data:/var/opt/gitlab
+    ports:
+    - 10080:80
+    - 22:22
+    - 443:443
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url "http://gitlab"

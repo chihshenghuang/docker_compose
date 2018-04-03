@@ -1,0 +1,31 @@
+{
+  "manifest": {
+    "name": "jest-resolve",
+    "version": "22.4.3",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest.git"
+    },
+    "license": "MIT",
+    "main": "build/index.js",
+    "dependencies": {
+      "browser-resolve": "^1.11.2",
+      "chalk": "^2.0.1"
+    },
+    "devDependencies": {
+      "jest-haste-map": "^22.4.3"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-jest-resolve-22.4.3-0ce9d438c8438229aa9b916968ec6b05c1abb4ea/package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-22.4.3.tgz#0ce9d438c8438229aa9b916968ec6b05c1abb4ea",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-22.4.3.tgz",
+    "hash": "0ce9d438c8438229aa9b916968ec6b05c1abb4ea",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "0ce9d438c8438229aa9b916968ec6b05c1abb4ea"
+}

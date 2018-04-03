@@ -1,0 +1,33 @@
+{
+  "manifest": {
+    "name": "jest-haste-map",
+    "version": "22.4.3",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest.git"
+    },
+    "license": "MIT",
+    "main": "build/index.js",
+    "dependencies": {
+      "fb-watchman": "^2.0.0",
+      "graceful-fs": "^4.1.11",
+      "jest-docblock": "^22.4.3",
+      "jest-serializer": "^22.4.3",
+      "jest-worker": "^22.4.3",
+      "micromatch": "^2.3.11",
+      "sane": "^2.0.0"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-jest-haste-map-22.4.3-25842fa2ba350200767ac27f658d58b9d5c2e20b/package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-22.4.3.tgz#25842fa2ba350200767ac27f658d58b9d5c2e20b",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-22.4.3.tgz",
+    "hash": "25842fa2ba350200767ac27f658d58b9d5c2e20b",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "25842fa2ba350200767ac27f658d58b9d5c2e20b"
+}

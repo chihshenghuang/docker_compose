@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.17">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.45">
+      <env class="tree-map">
+        <entry>
+          <string>NODEJS_HOME</string>
+          <string>/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS</string>
+        </entry>
+        <entry>
+          <string>PATH</string>
+          <string>/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin</string>
+        </entry>
+      </env>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>5</queueId>
+  <timestamp>1522726872324</timestamp>
+  <startTime>1522726872341</startTime>
+  <result>FAILURE</result>
+  <duration>9382</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+	stage(&apos;Initialize&apos;){
+		env.NODEJS_HOME = &quot;${tool &apos;NodeJS&apos;}&quot;
+		env.PATH = &quot;${env.NODEJS_HOME}/bin:${env.PATH}&quot;
+		sh &apos;node -v&apos;
+		sh &apos;npm -v&apos;
+		sh &apos;yarn -v&apos;
+	}
+
+	stage(&apos;Build&apos;) {
+	}
+
+	sshagent(credentials: [&apos;Ubuntu Container&apos;]) {
+		sh &apos;ssh -o &quot;StrictHostKeyChecking=no&quot; -l root@10.1.101.129 -p 32770&apos;
+	}
+}
+
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>430463766</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>91115614</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2779666774</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>164734992</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>367720047</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>19</iota>
+    <head>1:19</head>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

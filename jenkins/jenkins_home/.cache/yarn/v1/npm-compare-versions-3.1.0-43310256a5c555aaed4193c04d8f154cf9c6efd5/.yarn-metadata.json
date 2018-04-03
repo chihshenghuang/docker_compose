@@ -1,0 +1,48 @@
+{
+  "manifest": {
+    "name": "compare-versions",
+    "version": "3.1.0",
+    "description": "Compare semver version strings to find greater, equal or lesser.",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:omichelsen/compare-versions.git"
+    },
+    "scripts": {
+      "test": "mocha",
+      "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
+      "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/"
+    },
+    "keywords": [
+      "semver",
+      "version",
+      "compare",
+      "browser",
+      "node"
+    ],
+    "author": {
+      "name": "Ole Bjørn Michelsen",
+      "email": "ole@michelsen.dk"
+    },
+    "license": "MIT",
+    "devDependencies": {
+      "istanbul": "^0.4.3",
+      "mocha": "^3.0.2"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-compare-versions-3.1.0-43310256a5c555aaed4193c04d8f154cf9c6efd5/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# compare-versions\n\n[![Build Status](https://img.shields.io/travis/omichelsen/compare-versions/master.svg)](https://travis-ci.org/omichelsen/compare-versions)\n[![Coverage Status](https://coveralls.io/repos/omichelsen/compare-versions/badge.svg?branch=master&service=github)](https://coveralls.io/github/omichelsen/compare-versions?branch=master)\n\nCompare [semver](http://semver.org/) version strings to find greater, equal or lesser. Runs in the browser as well as Node.js/React Native etc. Has no dependencies and is tiny (<600 bytes gzipped).\n\nThis library supports the full semver specification, including comparing versions with different number of digits like `1.0.0`, `1.0`, `1`, and pre-release versions like `1.0.0-alpha`. Also supports wildcards for minor and patch version like `1.0.x` or `1.0.*`. Any leading `v` is ignored. Numbers with leading zero is handled as normal numbers ignoring the zero.\n\n## Install\n\nInstall with `npm` or `bower`:\n\n```bash\n$ npm install compare-versions --save\n```\n\n```bash\n$ bower install compare-versions --save\n```\n\n## Usage\n\n```javascript\nvar compareVersions = require('compare-versions');\n\ncompareVersions('10.1.8', '10.0.4'); //  1\ncompareVersions('10.0.1', '10.0.1'); //  0\ncompareVersions('10.1.1', '10.2.2'); // -1\n```\n\nCan also be used for sorting:\n\n```javascript\nvar versions = [\n    '1.5.19',\n    '1.2.3',\n    '1.5.5'\n];\nconsole.log(versions.sort(compareVersions));\n```\n\nOutputs:\n\n```javascript\n[\n    '1.2.3',\n    '1.5.5',\n    '1.5.19'\n]\n```\n",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2015\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/compare-versions/-/compare-versions-3.1.0.tgz#43310256a5c555aaed4193c04d8f154cf9c6efd5",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/compare-versions/-/compare-versions-3.1.0.tgz",
+    "hash": "43310256a5c555aaed4193c04d8f154cf9c6efd5",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "43310256a5c555aaed4193c04d8f154cf9c6efd5"
+}

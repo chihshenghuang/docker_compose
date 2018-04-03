@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.17">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.45">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>14</queueId>
+  <timestamp>1522660850230</timestamp>
+  <startTime>1522660850244</startTime>
+  <result>FAILURE</result>
+  <duration>9498</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+	stage(&apos;Initialize&apos;){
+		env.NODEJS_HOME = &quot;${tool &apos;NodeJS&apos;}&quot;
+		env.PATH = &quot;${env.NODEJS_HOME}/bin:${env.PATH}&quot;
+		sh &apos;node -v&apos;
+		sh &apos;npm -v&apos;
+		sh &apos;yarn -v&apos;
+	}
+
+	stage(&apos;Build&apos;) {
+	}
+
+	sshagent(credentials: [&apos;Ubuntu Container&apos;]) {
+		sh &apos;ssh -o &quot;StrictHostKeyChecking=no&quot; -l root@10.1.101.129 -p 32770&apos;
+	}
+}
+
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>437810200</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>3952702185</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1865243590</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>2299517727</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>324262210</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>12</iota>
+    <head>1:12</head>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.17">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <com.dabsquared.gitlabjenkins.cause.GitLabWebHookCause plugin="gitlab-plugin@1.5.4">
+            <data>
+              <actionType>PUSH</actionType>
+              <sourceProjectId>1</sourceProjectId>
+              <targetProjectId>1</targetProjectId>
+              <branch>master</branch>
+              <sourceBranch>master</sourceBranch>
+              <userName>chih sheng</userName>
+              <userEmail>samuel.huang@innovasolutions.com</userEmail>
+              <sourceRepoHomepage>http://89727ae2c88b/pedoe/jenkins-jest-test</sourceRepoHomepage>
+              <sourceRepoName>jenkins-jest-test</sourceRepoName>
+              <sourceNamespace>pedoe</sourceNamespace>
+              <sourceRepoUrl>git@89727ae2c88b:pedoe/jenkins-jest-test.git</sourceRepoUrl>
+              <sourceRepoSshUrl>git@89727ae2c88b:pedoe/jenkins-jest-test.git</sourceRepoSshUrl>
+              <sourceRepoHttpUrl>http://89727ae2c88b/pedoe/jenkins-jest-test.git</sourceRepoHttpUrl>
+              <mergeRequestTitle></mergeRequestTitle>
+              <mergeRequestDescription></mergeRequestDescription>
+              <mergeRequestState></mergeRequestState>
+              <mergedByUser></mergedByUser>
+              <mergeRequestAssignee></mergeRequestAssignee>
+              <targetBranch>master</targetBranch>
+              <targetRepoName></targetRepoName>
+              <targetNamespace></targetNamespace>
+              <targetRepoSshUrl></targetRepoSshUrl>
+              <targetRepoHttpUrl></targetRepoHttpUrl>
+              <triggeredByUser>chih sheng</triggeredByUser>
+              <before>8d1cbca26a96f4a67d9dd13f7ef44fad5c8771c5</before>
+              <after>6f3f6ffae1be1a0343fbe3806134a69627b71d8c</after>
+              <lastCommit>6f3f6ffae1be1a0343fbe3806134a69627b71d8c</lastCommit>
+              <targetProjectUrl>http://89727ae2c88b/pedoe/jenkins-jest-test</targetProjectUrl>
+            </data>
+          </com.dabsquared.gitlabjenkins.cause.GitLabWebHookCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction/>
+    <hudson.plugins.git.RevisionParameterAction plugin="git@3.8.0">
+      <commit>6f3f6ffae1be1a0343fbe3806134a69627b71d8c</commit>
+      <combineCommits>false</combineCommits>
+      <repoURL plugin="git-client@2.7.1">
+        <path>pedoe/jenkins-jest-test.git</path>
+        <rawPath>pedoe/jenkins-jest-test.git</rawPath>
+        <user>git</user>
+        <port>-1</port>
+        <host>89727ae2c88b</host>
+      </repoURL>
+    </hudson.plugins.git.RevisionParameterAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>2</queueId>
+  <timestamp>1522659153413</timestamp>
+  <startTime>1522659153491</startTime>
+  <result>SUCCESS</result>
+  <description>Started by GitLab push by chih sheng</description>
+  <duration>4929</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script></script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>59876522</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>6848307118</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>685359280</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>3968812635</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>112431478</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>3</iota>
+    <head>1:3</head>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

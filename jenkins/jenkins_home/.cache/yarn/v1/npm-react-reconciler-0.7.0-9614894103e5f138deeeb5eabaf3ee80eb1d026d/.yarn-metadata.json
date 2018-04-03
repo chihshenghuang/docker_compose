@@ -1,0 +1,59 @@
+{
+  "manifest": {
+    "name": "react-reconciler",
+    "description": "React package for creating custom renderers.",
+    "version": "0.7.0",
+    "keywords": [
+      "react"
+    ],
+    "homepage": "https://facebook.github.io/react/",
+    "bugs": {
+      "url": "https://github.com/facebook/react/issues"
+    },
+    "license": "MIT",
+    "files": [
+      "LICENSE",
+      "README.md",
+      "index.js",
+      "reflection.js",
+      "cjs/"
+    ],
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/react.git"
+    },
+    "engines": {
+      "node": ">=0.10.0"
+    },
+    "peerDependencies": {
+      "react": "^16.0.0"
+    },
+    "dependencies": {
+      "fbjs": "^0.8.16",
+      "loose-envify": "^1.1.0",
+      "object-assign": "^4.1.1",
+      "prop-types": "^15.6.0"
+    },
+    "browserify": {
+      "transform": [
+        "loose-envify"
+      ]
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-react-reconciler-0.7.0-9614894103e5f138deeeb5eabaf3ee80eb1d026d/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# react-reconciler\n\nThis is an experimental package for creating custom React renderers.\n\n**Its API is not as stable as that of React, React Native, or React DOM, and does not follow the common versioning scheme.**\n\n**Use it at your own risk.**\n\n## API\n\n```js\nvar Reconciler = require('react-reconciler');\n\nvar ReconcilerConfig = {\n  // You'll need to implement some methods here.\n  // See below for more information and examples.\n};\n\nvar MyRenderer = Reconciler(ReconcilerConfig);\n\nvar RendererPublicAPI = {\n  render(element, container, callback) {\n    // Call MyRenderer.updateContainer() to schedule changes on the roots.\n    // See ReactDOM, React Native, or React ART for practical examples.\n  }\n};\n\nmodule.exports = RendererPublicAPI;\n```\n\n## Practical Examples\n\n* [React ART](https://github.com/facebook/react/blob/master/packages/react-art/src/ReactART.js)\n* [React DOM](https://github.com/facebook/react/blob/master/packages/react-dom/src/client/ReactDOM.js)\n* [React Native](https://github.com/facebook/react/blob/master/packages/react-native-renderer/src/ReactNativeFiberRenderer.js)\n\nIf these links break please file an issue and we’ll fix them. They intentionally link to the latest versions since the API is still evolving.\n\nThis [third-party tutorial](https://github.com/nitin42/Making-a-custom-React-renderer) is relatively up-to-date and may be helpful.\n",
+    "licenseText": "MIT License\n\nCopyright (c) 2013-present, Facebook, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.7.0.tgz#9614894103e5f138deeeb5eabaf3ee80eb1d026d",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.7.0.tgz",
+    "hash": "9614894103e5f138deeeb5eabaf3ee80eb1d026d",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "9614894103e5f138deeeb5eabaf3ee80eb1d026d"
+}

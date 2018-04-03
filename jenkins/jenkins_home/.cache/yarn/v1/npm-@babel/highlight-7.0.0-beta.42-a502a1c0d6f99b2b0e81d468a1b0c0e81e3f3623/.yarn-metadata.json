@@ -1,0 +1,40 @@
+{
+  "manifest": {
+    "name": "@babel/highlight",
+    "version": "7.0.0-beta.42",
+    "description": "Syntax highlight JavaScript strings for output in terminals.",
+    "author": {
+      "name": "suchipi",
+      "email": "me@suchipi.com"
+    },
+    "homepage": "https://babeljs.io/",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/babel/babel/tree/master/packages/babel-highlight"
+    },
+    "main": "lib/index.js",
+    "dependencies": {
+      "chalk": "^2.0.0",
+      "esutils": "^2.0.2",
+      "js-tokens": "^3.0.0"
+    },
+    "devDependencies": {
+      "strip-ansi": "^4.0.0"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-@babel/highlight-7.0.0-beta.42-a502a1c0d6f99b2b0e81d468a1b0c0e81e3f3623/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# @babel/highlight\n\n> Syntax highlight JavaScript strings for output in terminals.\n\n## Install\n\n```sh\nnpm install --save @babel/highlight\n```\n\n## Usage\n\n```js\nimport highlight from \"@babel/highlight\";\n\nconst code = `class Foo {\n  constructor()\n}`;\n\nconst result = highlight(code);\n\nconsole.log(result);\n```\n\n```js\nclass Foo {\n  constructor()\n}\n```\n\nBy default, `highlight` will not highlight your code if your terminal does not support color. To force colors, pass `{ forceColor: true }` as the second argument to `highlight`.\n\n```js\nimport highlight from \"@babel/highlight\";\n\nconst code = `class Foo {\n  constructor()\n}`;\n\nconst result = highlight(code, { forceColor: true });\n```\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.0.0-beta.42.tgz#a502a1c0d6f99b2b0e81d468a1b0c0e81e3f3623",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.0.0-beta.42.tgz",
+    "hash": "a502a1c0d6f99b2b0e81d468a1b0c0e81e3f3623",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "a502a1c0d6f99b2b0e81d468a1b0c0e81e3f3623"
+}

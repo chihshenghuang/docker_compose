@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.17">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <com.dabsquared.gitlabjenkins.cause.GitLabWebHookCause plugin="gitlab-plugin@1.5.4">
+            <data>
+              <actionType>PUSH</actionType>
+              <sourceProjectId>3</sourceProjectId>
+              <targetProjectId>3</targetProjectId>
+              <branch>master</branch>
+              <sourceBranch>master</sourceBranch>
+              <userName>Chih Sheng Huang</userName>
+              <userEmail>pedoe19892@gmail.com</userEmail>
+              <sourceRepoHomepage>http://gitlab/samuel/jenkins-jest</sourceRepoHomepage>
+              <sourceRepoName>jenkins-jest</sourceRepoName>
+              <sourceNamespace>samuel</sourceNamespace>
+              <sourceRepoUrl>git@gitlab:samuel/jenkins-jest.git</sourceRepoUrl>
+              <sourceRepoSshUrl>git@gitlab:samuel/jenkins-jest.git</sourceRepoSshUrl>
+              <sourceRepoHttpUrl>http://gitlab/samuel/jenkins-jest.git</sourceRepoHttpUrl>
+              <mergeRequestTitle></mergeRequestTitle>
+              <mergeRequestDescription></mergeRequestDescription>
+              <mergeRequestState></mergeRequestState>
+              <mergedByUser></mergedByUser>
+              <mergeRequestAssignee></mergeRequestAssignee>
+              <targetBranch>master</targetBranch>
+              <targetRepoName></targetRepoName>
+              <targetNamespace></targetNamespace>
+              <targetRepoSshUrl></targetRepoSshUrl>
+              <targetRepoHttpUrl></targetRepoHttpUrl>
+              <triggeredByUser>Chih Sheng Huang</triggeredByUser>
+              <before>faa16c66340eae95b97bd4191f9634d137b530e3</before>
+              <after>91f46e063caee5b5baf384b20fa8c7996627e077</after>
+              <lastCommit>91f46e063caee5b5baf384b20fa8c7996627e077</lastCommit>
+              <targetProjectUrl>http://gitlab/samuel/jenkins-jest</targetProjectUrl>
+            </data>
+          </com.dabsquared.gitlabjenkins.cause.GitLabWebHookCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction/>
+    <hudson.plugins.git.RevisionParameterAction plugin="git@3.8.0">
+      <commit>91f46e063caee5b5baf384b20fa8c7996627e077</commit>
+      <combineCommits>false</combineCommits>
+      <repoURL plugin="git-client@2.7.1">
+        <path>samuel/jenkins-jest.git</path>
+        <rawPath>samuel/jenkins-jest.git</rawPath>
+        <user>git</user>
+        <port>-1</port>
+        <host>gitlab</host>
+      </repoURL>
+    </hudson.plugins.git.RevisionParameterAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.45">
+      <env class="tree-map">
+        <entry>
+          <string>NODEJS_HOME</string>
+          <string>/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS</string>
+        </entry>
+        <entry>
+          <string>PATH</string>
+          <string>/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin</string>
+        </entry>
+      </env>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>11</queueId>
+  <timestamp>1522727586848</timestamp>
+  <startTime>1522727586862</startTime>
+  <result>FAILURE</result>
+  <description>Started by GitLab push by Chih Sheng Huang</description>
+  <duration>9783</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+	stage(&apos;Initialize&apos;){
+		env.NODEJS_HOME = &quot;${tool &apos;NodeJS&apos;}&quot;
+		env.PATH = &quot;${env.NODEJS_HOME}/bin:${env.PATH}&quot;
+		sh &apos;pwd&apos;
+		sh &apos;yarn -v&apos;
+		sh &apos;yarn install&apos;
+	}
+
+  stage(&apos;test&apos;){
+    echo &apos;Start test...&apos;
+    sh &apos;yarn test --coverage&apos;		
+  }
+}
+
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>304368244</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>154620759</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2265530966</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>459109430</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>378175917</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>21</iota>
+    <head>1:21</head>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

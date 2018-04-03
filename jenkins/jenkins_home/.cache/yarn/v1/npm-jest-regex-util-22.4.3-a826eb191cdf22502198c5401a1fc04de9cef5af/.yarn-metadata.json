@@ -1,0 +1,24 @@
+{
+  "manifest": {
+    "name": "jest-regex-util",
+    "version": "22.4.3",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest.git"
+    },
+    "license": "MIT",
+    "main": "build/index.js",
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-jest-regex-util-22.4.3-a826eb191cdf22502198c5401a1fc04de9cef5af/package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/jest-regex-util/-/jest-regex-util-22.4.3.tgz#a826eb191cdf22502198c5401a1fc04de9cef5af",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/jest-regex-util/-/jest-regex-util-22.4.3.tgz",
+    "hash": "a826eb191cdf22502198c5401a1fc04de9cef5af",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "a826eb191cdf22502198c5401a1fc04de9cef5af"
+}

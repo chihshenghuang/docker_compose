@@ -1,0 +1,33 @@
+{
+  "manifest": {
+    "name": "expect",
+    "version": "22.4.3",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/jest.git"
+    },
+    "license": "MIT",
+    "main": "build/index.js",
+    "browser": "build-es5/index.js",
+    "dependencies": {
+      "ansi-styles": "^3.2.0",
+      "jest-diff": "^22.4.3",
+      "jest-get-type": "^22.4.3",
+      "jest-matcher-utils": "^22.4.3",
+      "jest-message-util": "^22.4.3",
+      "jest-regex-util": "^22.4.3"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-expect-22.4.3-d5a29d0a0e1fb2153557caef2674d4547e914674/package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/expect/-/expect-22.4.3.tgz#d5a29d0a0e1fb2153557caef2674d4547e914674",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/expect/-/expect-22.4.3.tgz",
+    "hash": "d5a29d0a0e1fb2153557caef2674d4547e914674",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "d5a29d0a0e1fb2153557caef2674d4547e914674"
+}

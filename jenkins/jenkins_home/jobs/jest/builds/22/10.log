@@ -1,0 +1,14 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://gitlab/samuel/jenkins-jest.git # timeout=10
+Fetching upstream changes from http://gitlab/samuel/jenkins-jest.git
+ > git --version # timeout=10
+ > git fetch --tags --progress http://gitlab/samuel/jenkins-jest.git +refs/heads/*:refs/remotes/origin/*
+skipping resolution of commit 2dac20927f3294940500550279a9d0114376a27d, since it originates from another repository
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 2dac20927f3294940500550279a9d0114376a27d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2dac20927f3294940500550279a9d0114376a27d
+Commit message: "modify jenkinsfile"
+ > git rev-list --no-walk a2e65a1227a763fb52ddf544a3e19ecec1cef282 # timeout=10

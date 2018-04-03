@@ -1,0 +1,62 @@
+{
+  "manifest": {
+    "name": "codecov",
+    "version": "3.0.0",
+    "description": "Uploading report to Codecov: https://codecov.io",
+    "main": "index.js",
+    "scripts": {
+      "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/codecov/codecov-node"
+    },
+    "keywords": [
+      "coverage",
+      "code-coverage",
+      "codecov.io",
+      "codecov"
+    ],
+    "bin": {
+      "codecov": "./bin/codecov"
+    },
+    "engines": {
+      "node": ">=1.0"
+    },
+    "author": {
+      "name": "Codecov",
+      "email": "hello@codecov.io"
+    },
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/codecov/codecov-node/issues"
+    },
+    "homepage": "https://github.com/codecov/codecov-node",
+    "dependencies": {
+      "request": "2.81.0",
+      "urlgrey": "0.4.4",
+      "argv": "0.0.2"
+    },
+    "devDependencies": {
+      "expect.js": "^0.3.1",
+      "istanbul": "^0.4.5",
+      "jshint": "^2.9.3",
+      "mocha": "^3.0.2"
+    },
+    "_registry": "npm",
+    "_loc": "/var/jenkins_home/.cache/yarn/v1/npm-codecov-3.0.0-c273b8c4f12945723e8dc9d25803d89343e5f28e/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# Codecov NodeJS Uploader\n\n[![NPM version][npm-image]][npm-url]\n[![Build Status][travis-image]][travis-url]\n[![Build Status][appveyor-image]][appveyor-url]\n[![codecov.io](https://codecov.io/github/codecov/codecov-node/coverage.svg?branch=master)](https://codecov.io/github/codecov/codecov-node?branch=master)\n[![Dependency Status][depstat-image]][depstat-url]\n[![Dev Dependency Status][devdepstat-image]][devdepstat-url]\n\n[Codecov.io](https://codecov.io/) support for node.js.\n\n## Installation:\nAdd the latest version of `codecov` to your package.json:\n```\nnpm install codecov --save-dev\n```\nor\n```\nyarn add codecov --dev\n```\n\n## Usage:\n\nThis script ( `bin/codecov` ) detect your CI provider and all coverage reports and uploads them to Codecov.\n\nOnce your app is instrumented for coverage, and building, simply call `./node_modules/.bin/codecov`.\n\nThis library currently supports the following CI companies: [Travis CI](https://travis-ci.org/), [Travis](https://travis-ci.com/), [Appveyor](https://appveyor.com/), [CircleCI](https://circleci.com/), [Codeship](https://codeship.io/), [Drone](https://drone.io/), [Jenkins](http://jenkins-ci.org/), [Shippable](https://shippable.com/), [Semaphore](https://semaphoreapp.com/), [Wercker](https://wercker.com/), [Snap CI](https://snap-ci.com/), [Buildkite](https://buildkite.com/).\n\n#### Upload repo tokens\n> Repo tokens are **not** required for public repos tested on Travis-Org, CircleCI or AppVeyor.\n\nRepo tokens are necessary to distinguish your repository from others. You can find your repo token on your repository page at Codecov. Set this unique uuid to `CODECOV_TOKEN` in your environment variables.\n\n```\nexport CODECOV_TOKEN=\":uuid-repo-token\"\n# or\n./node_modules/.bin/codecov --token=:token\n```\n\n#### [Istanbul](https://github.com/gotwarlost/istanbul)\n\n**With Mocha:**\n\n```sh\nistanbul cover ./node_modules/mocha/bin/_mocha -- -R spec\n./node_modules/.bin/codecov\n```\n\n**With Jasmine:**\n\n```sh\nistanbul cover jasmine-node --captureExceptions spec/\n./node_modules/.bin/codecov\n```\n\n**With Tape:**\n\n```sh\nistanbul cover test.js\n./node_modules/.bin/codecov\n```\n\n[travis-image]: https://travis-ci.org/codecov/codecov-node.svg?branch=master\n[travis-url]: https://travis-ci.org/codecov/codecov-node\n\n[appveyor-image]: https://ci.appveyor.com/api/projects/status/ea1suiv0tprnq61l?svg=true\n[appveyor-url]: https://ci.appveyor.com/project/eddiemoore/codecov-node/branch/master\n\n[npm-url]: https://npmjs.org/package/codecov\n[npm-image]: https://img.shields.io/npm/v/codecov.svg\n\n[depstat-url]: https://david-dm.org/codecov/codecov-node\n[depstat-image]: https://img.shields.io/david/codecov/codecov-node/master.svg\n\n[devdepstat-url]: https://david-dm.org/codecov/codecov-node#info=devDependencies\n[devdepstat-image]: https://img.shields.io/david/dev/codecov/codecov-node/master.svg\n\n**With NYC**\n\n```\nnyc npm test\nnyc report --reporter=text-lcov > coverage.lcov\n./node_modules/.bin/codecov\n```\n\n## Change Log\n- v2.0.0 No longer supports node v0.10 because of the execSync.\n- v2.0.1 Publish as latest instead of next.\n- v2.0.2 Display correct version number in console.\n- v2.1.0 Flags supported http://docs.codecov.io/docs/flags\n- v2.2.0 Support for Jenkins Blue Ocean. Clean reports after upload. Fix for Gitlab.\n- v2.3.0 Added support for Windows. Updated dependencies.\n- v3.0.0 No longer supports node v0.12 because of new version of request\n",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2014 Gregg Caines\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/codecov/-/codecov-3.0.0.tgz#c273b8c4f12945723e8dc9d25803d89343e5f28e",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/codecov/-/codecov-3.0.0.tgz",
+    "hash": "c273b8c4f12945723e8dc9d25803d89343e5f28e",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "c273b8c4f12945723e8dc9d25803d89343e5f28e"
+}
