@@ -4399,3 +4399,21 @@ Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
 Started GET "/-/metrics" for 127.0.0.1 at 2018-04-03 05:38:26 +0000
 Processing by MetricsController#index as HTML
 Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+Started GET "/-/metrics" for 127.0.0.1 at 2018-04-03 05:38:41 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+Started GET "/-/metrics" for 127.0.0.1 at 2018-04-03 05:38:56 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+Started GET "/help" for 127.0.0.1 at 2018-04-03 05:39:03 +0000
+Processing by HelpController#index as */*
+Completed 200 OK in 223ms (Views: 219.4ms | ActiveRecord: 0.0ms)
+Started GET "/-/metrics" for 127.0.0.1 at 2018-04-03 05:39:11 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+Started GET "/-/metrics" for 127.0.0.1 at 2018-04-03 05:39:26 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+Started GET "/-/metrics" for 127.0.0.1 at 2018-04-03 05:39:41 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)

@@ -34,3 +34,6 @@ I, [2018-04-03T05:24:10.076645 #16562]  INFO -- : worker=0 ready
 E, [2018-04-03T05:27:02.971987 #492] ERROR -- : worker=0 PID:16562 timeout (62s > 60s), killing
 E, [2018-04-03T05:27:04.266524 #492] ERROR -- : reaped #<Process::Status: pid 16562 SIGKILL (signal 9)> worker=0
 I, [2018-04-03T05:27:12.052427 #16906]  INFO -- : worker=0 ready
+I, [2018-04-03T05:39:53.111729 #492]  INFO -- : reaped #<Process::Status: pid 16906 exit 0> worker=0
+I, [2018-04-03T05:39:53.112445 #492]  INFO -- : reaped #<Process::Status: pid 4843 exit 0> worker=1
+I, [2018-04-03T05:39:53.113038 #492]  INFO -- : master complete
