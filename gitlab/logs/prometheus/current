@@ -67,3 +67,5 @@
 2018-04-03_05:27:28.19917 time="2018-04-03T05:27:28Z" level=info msg="Done checkpointing in-memory metrics and chunks in 630.286399ms." source="persistence.go:665" 
 2018-04-03_05:32:28.20131 time="2018-04-03T05:32:28Z" level=info msg="Checkpointing in-memory metrics and chunks..." source="persistence.go:633" 
 2018-04-03_05:32:28.37092 time="2018-04-03T05:32:28Z" level=info msg="Done checkpointing in-memory metrics and chunks in 169.406255ms." source="persistence.go:665" 
+2018-04-03_05:37:28.37376 time="2018-04-03T05:37:28Z" level=info msg="Checkpointing in-memory metrics and chunks..." source="persistence.go:633" 
+2018-04-03_05:37:28.50486 time="2018-04-03T05:37:28Z" level=info msg="Done checkpointing in-memory metrics and chunks in 130.846444ms." source="persistence.go:665" 

@@ -146,3 +146,8 @@
 2018-04-03_05:31:55.09440 17543:C 03 Apr 05:31:55.094 * DB saved on disk
 2018-04-03_05:31:55.09506 17543:C 03 Apr 05:31:55.095 * RDB: 0 MB of memory used by copy-on-write
 2018-04-03_05:31:55.18804 352:M 03 Apr 05:31:55.187 * Background saving terminated with success
+2018-04-03_05:36:56.10988 352:M 03 Apr 05:36:56.108 * 10 changes in 300 seconds. Saving...
+2018-04-03_05:36:56.11079 352:M 03 Apr 05:36:56.109 * Background saving started by pid 18190
+2018-04-03_05:36:56.11878 18190:C 03 Apr 05:36:56.118 * DB saved on disk
+2018-04-03_05:36:56.11942 18190:C 03 Apr 05:36:56.119 * RDB: 0 MB of memory used by copy-on-write
+2018-04-03_05:36:56.21096 352:M 03 Apr 05:36:56.210 * Background saving terminated with success
